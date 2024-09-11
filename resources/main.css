@@ -1,0 +1,19 @@
+#broken-face {
+    height: 50em;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+
+    padding: 1rem;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
