@@ -20,12 +20,15 @@ header {
     background-color: aliceblue;
 }
 
-aside {
+nav {
     grid-area: a;
     background-color: bisque;
     position: sticky;
-    left: 0;
-    width: 10%;
+}
+
+nav ul {
+    position: sticky;
+    top: 1rem;
 }
 
 main {
@@ -40,4 +43,14 @@ footer {
     position: relative;
     text-align: center;
     width: 100%;
+}
+
+
+
+aside video {
+    width: 20%;
+
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
 }
