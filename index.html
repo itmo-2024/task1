@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letter - Artyom Shvetsov</title>
+    <title>Letter to Hogwarts - Artyom Shvetsov</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Letter to Hogwarts</h1>
-    </header>
+    </header> -->
     <main>
         <header>
             <figure>
-                <img src="hogwarts-logo.png" alt="hogwarts-logo" width="150px">
+                <img src="hogwarts-logo.png" alt="hogwarts-logo" width="150">
             </figure>
         </header>
 
@@ -30,12 +30,12 @@ To: Mr Oleg Mokhov,
             </section>
 
             <section> <!-- Introduction -->
-                <p>
-                    Dear <strong><em>Mr. Mokhov</em></strong>,
-                </p>
+                <h3>
+                    Dear <em>Mr. Mokhov</em>,
+                </h3>
     
                 <p>
-                    I am pleased to have been informed that I have been accepted at <q>Hogwarts School of HTML and CSS</q>. <br>
+                    I am pleased to have been informed that I have been accepted at <q><strong>Hogwarts School of HTML and CSS</strong></q>. <br>
                     Frankly speaking, my parents aren't frontenders. And neither am I... 
                     In this letter I'd like to tell you the truth about me.
                 </p>
@@ -43,7 +43,8 @@ To: Mr Oleg Mokhov,
 
             <section> <!-- Main part -->
                 <p>
-                    I am not the best CT ITMO student. My A's, B's and C's can be listed in only one simple table:
+                    I am not the best <abbr>CT ITMO</abbr> (Computer Technologies faculty in ITMO [ITMO is not <br>
+                    an abbrevation anymore]) student. My A's, B's and C's can be listed in only one simple table:
                 </p>
 
                 <table>
@@ -90,16 +91,19 @@ To: Mr Oleg Mokhov,
                 </table>
                 
                 <p>
-                    But still I am used to learning a lot of maths, writing notes all the time. <br>Writing, writing, writing<sup>2</sup>.
+                    But still I am used to learning a lot of maths, writing notes all the time.
+                    <br>Writing, writing<sup>2</sup>, writing<sup>&#8734</sup>.
                 </p>
 
                 <p>
-                    Some time ago I realised that I barely write any code while studying to all these maths subjects.<br>
+                    Some time ago in previous semester (maybe it was when I studied for our Math Analysis <br>
+                    exam — <time datetime="2024-06-10">June 10</time>) I realised that I barely write any code while studying
+                    to all these maths subjects.<br>
                     And I decided to go to Hogwarts. 
                 </p>
 
                 <p>
-                    Remember the part where I said that I'm not the best CT ITMO student? Maybe I am.<br>
+                    Remember the part where I said that I'm not the best <abbr>CT ITMO</abbr> student? Maybe I am.<br>
                     But I'm very motivated to learn at Hogwarts of HTML & CSS. <a href="https://youtu.be/LKq3Wk345Hg?si=oPHvERPKelFxcc3S&t=571">
                     You give me this, and I will work <br> as hard as it takes to school
                     those CT douches and become the best frontender you have ever seen</a>.
@@ -108,15 +112,19 @@ To: Mr Oleg Mokhov,
                 <p>
                     But forget about all this motivational crap. Let me tell you some interesting facts about me & my life:
                     <ul>
-                        <li>I'm 21</li>
+                        <li>I'm 21 years of <var>age</var></li>
                         <li>Last year I ran a marathon</li>
                         <li>The A in History I got for:
-                            <ol>
-                                <li>building a website <ruby><span style="color:grey">(on Tilda)</span><rt>[I'm sorry]</rt></ruby></li>
-                                <li>making some QR-codes leading to the website</li>
-                                <li>for the Alliluev's museum in SPb</li>
-                                <li>(I really liked it)</li>
-                            </ol>
+                            <dl>
+                                <dt>- Building a website <ruby><span style="color:grey">(on Tilda)</span><rt>[I'm sorry]</rt></ruby></dt>
+                                <dd>(also an android app)</dd>
+                                
+                                <dt>- Making some QR-codes leading to the website</dt>
+                                <dd>(the QR-codes led to pages that described the exhibit)</dd>
+
+                                <dt>- It was made for the Alliluev's museum in SPb</dt>
+                                <dd>(I really liked it)</dd>
+                            </dl>
                         </li>
                         <li>I had the opportunity to learn frontend 3 years ago, but for some reasons didn't take it</li>
                         <li>I love English language so much that I write the word "Я" in Russian with a capital letter</li>
@@ -130,7 +138,7 @@ To: Mr Oleg Mokhov,
                 </p>
                 
                 <p>Yours sincerely,</p>
-                <img src="signature.png" alt="signature" width="150px">
+                <img src="signature.png" alt="signature" width="150">
                 <p>Artyom Shvetsov, <br>Future Student</p>
                 
                 <hr>
@@ -138,12 +146,13 @@ To: Mr Oleg Mokhov,
         </article>
     
         <footer>
-            <h5>HOGWARTS SCHOOL of HTML & CSS</h5>
-            <h6>Headmaster: Oleg Mokhov,<br>(Order of Berners-Lee, First Class, D.H.C.,<br>
-                J.S.(sorc.), International Confed. of Frontenders)</h6>
+            <p>HOGWARTS SCHOOL of HTML & CSS</p>
+            <p>Headmaster: Oleg Mokhov,<br>(Order of Berners-Lee, First Class, D.H.C.,<br>
+                J.S.(sorc.), International Confed. of Frontenders)</p>
             <hr>
             <address>
-                <p><mark>Please contact me via email or Telegram for further communication</mark> <small>(my roommates get scared when something flies through our window):</small></p>
+                <p><mark>Please contact me via email or Telegram for further communication</mark><br>
+                    (my roommates get scared when something flies through our window):</p>
                 <p><a href="mailto:shvetsovart55@gmail.com">shvetsovart55@gmail.com</a></p>
                 <p><a href="https://t.me/ArtyomShvetsov">Telegram: ArtyomShvetsov</a></p>
             </address>
