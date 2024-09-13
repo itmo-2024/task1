@@ -1,0 +1,102 @@
+html {
+    font-family: 'Sofadi One', serif;
+}
+
+.main-header {
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+main {
+    display: flex;
+}
+
+nav,
+aside {
+    width: 25%;
+    display: block;
+    height: min-content;
+    border: 5px solid black;
+    background-color: darkgray;
+}
+
+nav {
+    h3 {
+        font-size: 2vw;
+        padding-left: 10px;
+    }
+
+    ul {
+        padding: 0 0 15px 25px;
+        list-style-type: circle;
+
+        li {
+            font-size: 1.5vw;
+            a {
+                color: black;
+                &:hover {
+                    color: green;
+                }
+            }
+        }
+    }
+}
+
+
+section {
+    width: 50%;
+    padding-bottom: 20px;
+
+    header {
+        padding-bottom: 10px;
+        font-size: 2vw;
+        text-align: center;
+    }
+}
+
+.description-container {
+    img {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        aspect-ratio: 1 / 1;
+        border: 5px solid black;
+        border-radius: 50%;
+    }
+
+    article {
+        font-size: 1.35vw;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+aside {
+    h3 {
+        width: 60%;
+        padding-left: 20%;
+        font-size: 1.75vw;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: solid black;
+
+    h3 {
+        font-size: 1.5vw;
+    }
+
+    time {
+        text-decoration: underline;
+    }
+}
