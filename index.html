@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Autobiography">
-    <meta name="author" content="Aleksandr Kiriak">
+    <meta name="description" content="Автобиография">
+    <meta name="author" content="Александр Кирьяк">
     <title>Александр Кирьяк</title>
     <link href="./styles.css" rel="stylesheet">
 </head>
@@ -14,53 +14,61 @@
             <h1 style="text-align: center;">Автобиография</h1>
         </header>
 
-        <figure style="float: right;">
-            <img src="resources/my_photo.jpg" alt="Моё фото" width="500">
-            <figcaption style="text-align: center">Это я</figcaption>
-        </figure>
+        <table>
+            <tr>
+                <td class="outer">
+                    <p>
+                        Меня зовут Саша, мне 20 лет. Я учусь на третьем курсе в
+                        <a href="https://itmo.ru/"><em>Университете <abbr title="Санкт-Петербургский национальный
+                        исследовательский университет информационных технологий, механики и оптики">ИТМО</abbr></em></a>
+                        на направлении "Прикладная математика и информатика". Параллельно прохожу стажировку в
+                        <a href="https://www.tbank.ru/"><strong>Т-Банке</strong></a>.
+                    </p>
 
-        <p>
-            Меня зовут Саша, мне 20 лет. Я учусь на третьем курсе в <em>Университете ИТМО</em> на направлении
-            "Прикладная математика и информатика". Параллельно прохожу стажировку в <strong>Т-Банке</strong>.
-        </p>
+                    <section>
+                        <h3>Пару фактов обо мне:</h3>
+                        <ol type="I">
+                            <li>Кандидат в мастера спорта по плаванию.</li>
+                            <li>Любимый фильм: Начало (<time datetime="2010">2010</time>).</li>
+                            <li>Любимая цитата: <q>Своим долголетием я обязан спорту. Я им никогда не занимался</q> — Уинстон Черчилль.</li>
+                        </ol>
+                    </section>
 
-        <section>
-            <h3>Пару фактов обо мне:</h3>
-            <ol type="I">
-                <li>Кандидат в мастера спорта по плаванию.</li>
-                <li>Любимый фильм: Начало (<time datetime="2010">2010</time>).</li>
-                <li>Любимая цитата: <q>Своим долголетием я обязан спорту. Я им никогда не занимался</q> — Уинстон Черчилль.</li>
-            </ol>
-        </section>
+                    <p>В процессе работы и учёбы в университете я получил следующие знания:</p>
+                    <table style="font-family: Georgia, serif; text-align: center; border-collapse: collapse">
+                        <thead>
+                        <tr>
+                            <th>Языки программирования</th>
+                            <th>Технологии</th>
+                            <th>Фреймворки</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Java, Kotlin, C++, Python</td>
+                            <td>Git, Github/Gitlab, PostgreSQL, Camunda, Kafka, Kubernetes, Postman</td>
+                            <td>Spring, JUnit</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Хочу пополнить эту таблицу знаниями <mark style="background-color: greenyellow;">Фронтенда</mark>,
+                        собственно поэтому я и пишу это письмо.
+                    </p>
 
-        <p>В процессе работы и учёбы в университете я получил следующие знания:</p>
-        <div style="font-family: Georgia, serif; text-align: center;">
-            <table>
-                <tbody>
-                <tr>
-                    <td>Языки программирования</td>
-                    <td>Технологии</td>
-                    <td>Фреймворки</td>
-                </tr>
-                <tr>
-                    <td>Java, Kotlin, C++, Python</td>
-                    <td>Git, Github/Gitlab, PostgreSQL, Camunda, Kafka, Kubernetes, Postman</td>
-                    <td>Spring, JUnit</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <p>
-            Хочу пополнить эту таблицу знаниями <mark style="background-color: greenyellow;">Фронтенда</mark>,
-            собственно поэтому я и пишу это письмо.
-        </p>
+                    <video width="350" height="280" poster="resources/4etko_preview.jpg" controls loop style="max-width: 100%;">
+                        <source src="resources/4etko.mp4" type="video/mp4">
+                        <source src="resources/4etko.ogv" type="video/ogg">
+                        Элемент video не поддерживается вашим браузером.
+                        <a href="resources/4etko.mp4">Скачайте видео</a>
+                    </video>
+                </td>
 
-        <video width="350" height="280" poster="resources/4etko_preview.jpg" controls loop>
-            <source src="resources/4etko.mp4" type="video/mp4">
-            <source src="resources/4etko.ogv" type="video/ogg">
-            Элемент video не поддерживается вашим браузером.
-            <a href="resources/4etko.mp4">Скачайте видео</a>
-        </video>
+                <td class="outer">
+                    <img src="resources/my_photo.jpg" alt="Моё фото" width="500" style="margin: 40px">
+                </td>
+            </tr>
+        </table>
     </article>
 </main>
 

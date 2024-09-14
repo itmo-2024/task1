@@ -1,3 +1,11 @@
-td {
+table {
+    border-collapse: collapse;
+}
+
+td.outer {
+    border: 0;
+}
+
+th, td {
     border: thin solid grey;
 }
