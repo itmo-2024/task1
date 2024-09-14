@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 56.25vh;
     align-items: start;
 }
 .container {
@@ -33,9 +32,19 @@ nav {
     position: sticky;
 }
 
+ul {
+    list-style: none;
+}
+
 nav ul {
     position: sticky;
     top: 1rem;
+    padding: 0;
+    margin: 0.7rem;
+}
+
+nav a {
+    color: navy;
 }
 
 main {
@@ -60,8 +69,20 @@ aside video {
     height: 100vh;
 }
 
+@media screen and (min-width: 120vh) {
+    body {
+        grid-template-columns: 1fr 56.25vh;
+    }
+}
+
 @media screen and (max-width: 120vh) {
+    body {
+        grid-template-columns: 1fr;
+    }
     .subway {
         display: none;
     }
 }
+
+
+
