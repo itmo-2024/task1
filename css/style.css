@@ -1,0 +1,150 @@
+.head {
+    position: relative;
+}
+
+header div.hello h1 {
+    top: 1%;
+    left: 60%;
+    position: absolute;
+    font-size: 10vw;
+    color: #2f4f4f;
+}
+header div.hello h3 {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    font-size: 7vw;
+    color: #a9a9a9;
+}
+header div.hello {
+    position: relative;
+    background: #d8bfd8;
+    padding: 6.6%;
+    width: 87%;
+}
+
+.photo img {
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+}
+
+.wrapper {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+}
+
+.loc, .phone,
+.email, .git {
+    position: relative;
+}
+
+.loc h1, .phone h1,
+.email h1, .git h1 {
+    color: #2f4f4f;
+    font-size: 2vw;
+    width: 40%;
+}
+
+.loc h5, .phone h5,
+.email h5, .git h5 {
+    width: 80%;
+    color: #2f4f4f;
+    font-size: 1.25vw;
+    transform: translateY(-20%) translateX(25%);
+}
+
+.email span,
+.git span,
+.phone span {
+    cursor: pointer;
+}
+
+.email h5:hover,
+.git h5:hover,
+.phone h5:hover {
+    color: #d8bfd8;
+}
+
+.intro h3 {
+    color: #2f4f4f;
+    width: 70vw;
+    font-size: 1.5vw;
+}
+
+
+.intro strong {
+    color: #2f4f4f;
+    font-size: 130%;
+}
+.skill h1 {
+    color: #2f4f4f;
+    font-size: 3vw;
+}
+
+.skill ol {
+    color: #2f4f4f;
+    list-style-type: disc;
+    font-size: 1.5vw;
+}
+
+.wrap {
+    display: inline-grid;
+    grid-template-columns: 90% 10%;
+    width: 90%;
+}
+
+footer {
+    margin-top: 5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    background: #d8bfd8;
+}
+
+button {
+    background: #d8bfd8;
+    border: none;
+    border-radius: 5px;
+    font-size: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.video {
+    padding-left: 40%;
+    width: 100px;
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    padding: 16px 24px;
+    box-shadow: 15px 15px 0 0 #d8bfd8;
+    color: #2f4f4f;
+    border: 3px solid #d8bfd8;
+}
+
+.dfn {
+    border: 3px solid;
+}
+
+.quote cite {
+    color: #2f4f4f;
+    font-size: 21px;
+    padding-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+.flower {
+    color: #2f4f4f;
+    text-align: center;
+    line-height: 18px;
+}

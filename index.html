@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ar1naka</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="head">
+        <div class="hello">
+            <h1>Evseeva</h1>
+            <h3>Arina</h3>
+        </div>
+        <div id="myPhoto" class="photo">
+            <img src="img/photo.png" alt="photo"/>
+        </div>
+
+        <aside class="wrapper">
+            <div class="loc">
+                <h1>Location:</h1>
+                <h5>Saint Petersburg</h5>
+            </div>
+            <div class="phone" id="phone" onclick="copyText(this)">
+                <h1>Phone:</h1>
+                <span><h5>+7 (937)-994-84-12</h5></span>
+            </div>
+            <div class="email" id="email" onclick="copyText(this)">
+                <h1>Email:</h1>
+                <span><h5>arinaka.ha@yandex.ru</h5></span>
+            </div>
+            <div class="git" id="git" onclick="copyText(this)">
+                <h1>GitHub:</h1>
+                <span><h5>https://github.com/ar1naka</h5></span>
+            </div>
+        </aside>
+
+    </div>
+</header>
+
+<script>
+    function copyText(element) {
+        const span = element.querySelector('span');
+        const range = document.createRange();
+        range.selectNodeContents(span);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+    }
+</script>
+
+<div class="middle">
+    <div class="wrap">
+        <div class="intro">
+            <strong>О себе:</strong>
+            <h3>Добро пожаловать, юный маг! Меня зовут Арина, и я обучаюсь на третьем курсе факультета Магии Вычислений в Университете ИТМО, где
+                изучаю волшебную науку Программирования и Искусственного Интеллекта. В прошлом году я успешно овладела основами Веб-магии, изучая древние руны HTML, CSS и чары JavaScript.
+                Также в течение двух лет я постигаю искусство программирования на языке Java. В пятом семестре мне доверили обучать юных волшебников тайнам Веб-магии. Я горжусь своими высокими оценками по заклинаниям программирования,
+                алгорифмам и структуре данных. Сейчас я хочу углубиться в чары Frontend, чтобы усовершенствовать свои навыки в этой области. </h3>
+        </div>
+        <div class="skill">
+            <h1>Навыки:</h1>
+            <ol>
+                <li>Java</li>
+                <li>Spring</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Bash</li>
+                <li>HTML, CSS</li>
+                <li>English C1</li>
+            </ol>
+        </div>
+    </div>
+
+</div>
+<div id="video" class="video">
+    <img src="img/cat.gif" alt="photo" style="display: none;">
+</div>
+<button id="butt">Увидеть котенка :)</button>
+<script>
+    const but = document.getElementById("butt");
+    const video = document.getElementById("video");
+    let flag = false;
+
+    but.addEventListener("click", () => {
+        flag = !flag;
+        if (flag) {
+            video.querySelector("img").style.display = "block";
+            but.textContent = "Скрыть котенка :(";
+        } else {
+            video.querySelector("img").style.display = "none";
+            but.textContent = "Увидеть котенка :)";
+        }
+    });
+</script>
+
+
+
+<blockquote class="quote">
+    <p>The truth. It is a beautiful and terrible thing, and should therefore be treated with great caution.
+        <dfn >
+            <p>Правда — это прекраснейшая, но одновременно и опаснейшая вещь. А потому к ней надо подходить с превеликой осторожностью. </p>
+        </dfn>
+    </p>
+    <cite>Albus Dumbledore</cite>
+</blockquote>
+<pre class="flower">
+                   (¯`:´¯)⋰
+                (¯`•.\|/.•´¯)
+                 (¯`•.O.•´¯)(¯`:´¯)⋰
+                (_.•´/|\`•._).\|/.•´¯)
+                   (_.:._)(¯`•.O.•´¯)
+                   (¯`:´¯)⋰•´/|\`•._)
+                (¯`•.\|/.•´¯)_.:._)
+                 (¯`•.O.•´¯)  (¯`:´¯)⋰
+                (_.•´/|\`•._)`•.\|/.•´¯)
+                   (_.:._)  (¯`•.O.•´¯)
+                           (_.•´/|\`•._)
+                            (_.:._)
+</pre>
+</body>
+
+<footer>
+    <a href="#">Arina</a> &copy; 2024-2024 by Me
+    <address>arinaka.ha@yandex.ru</address>
+</footer>
+</html>
