@@ -1,0 +1,123 @@
+.main-header {
+    margin-left: 6em;
+    margin-right: 6em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 12px;
+    background: linear-gradient(45deg, aliceblue, lightblue, lavender);
+    background-size: 300% 300%;
+    animation: gradientShift 5s ease infinite; /*Infinite gradient animation*/
+}
+
+@keyframes gradientShift {
+     0% { background-position: 0 50%; }
+     50% { background-position: 100% 50%; }
+     100% { background-position: 0 50%; }
+ }
+
+.main-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+main {
+    display: flex;
+}
+
+
+.content {
+    background-color: ghostwhite;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.info-header {
+    height: 0;
+    font-size: 1.7em;
+    padding-left: 0.7em;
+}
+
+.info-header h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+article .info {
+    font-size: 1.35em;
+    padding: 2em;
+}
+
+article {
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* increase shadow */
+}
+
+
+aside {
+    width: 120%;
+    padding: 3em;
+    color: crimson;
+    background-color: azure;
+    transition: background-color 0.3s ease;
+}
+
+aside:hover {
+    background-color: honeydew; /* change color */
+}
+
+aside ul {
+    border-bottom: 2px solid #333;
+    list-style: none;
+}
+
+aside ul li {
+    margin: 0.5em 0;
+}
+
+aside ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+aside ul li a i {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* icons animation */
+aside ul li a:hover i {
+    transform: rotate(20deg);
+}
+
+.gif-container {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+nav {
+    width: 25%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: blanchedalmond;
+}
