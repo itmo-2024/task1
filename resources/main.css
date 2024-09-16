@@ -1,19 +1,21 @@
 html {
     font-family: "Roboto serif", sans-serif;
 }
+
 body {
     margin: 0;
     padding: 0;
     display: grid;
     align-items: start;
 }
+
 .container {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 7fr ;
+    grid-template-columns: 1fr 7fr;
     grid-template-areas:
         "h h"
         "a m"
@@ -50,6 +52,7 @@ nav a {
 main {
     grid-area: m;
     padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 footer {
@@ -58,12 +61,27 @@ footer {
     text-align: center;
 }
 
+#gallery {
+    margin: 0;
+    padding: 0.2rem;
+}
+
+#gallery img {
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+#gallery figcaption {
+    text-align: center;
+}
 
 aside {
     position: fixed;
     top: 0;
     right: 0;
 }
+
 aside video {
     height: 100vh;
 }
@@ -78,6 +96,7 @@ aside video {
     body {
         grid-template-columns: 1fr;
     }
+
     .subway {
         display: none;
     }
