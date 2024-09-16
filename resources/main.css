@@ -1,7 +1,6 @@
-#broken-face {
-    height: 50em;
+html {
+    font-family: "Roboto serif", sans-serif;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -16,9 +15,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 7fr ;
     grid-template-areas:
-        "h h s"
-        "a m s"
-        "f f s";
+        "h h"
+        "a m"
+        "f f";
 }
 
 header {
@@ -45,17 +44,17 @@ nav ul {
 
 nav a {
     color: navy;
+    text-decoration: none;
 }
 
 main {
     grid-area: m;
+    padding-left: 0.3rem;
 }
 
 footer {
     grid-area: f;
-    padding: 1rem;
-    bottom: 0;
-    position: relative;
+    padding: 0.5rem 1rem 1rem;
     text-align: center;
 }
 
