@@ -1,5 +1,6 @@
 html {
     font-family: "Roboto serif", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 header {
     grid-area: h;
     background-color: aliceblue;
+    padding-left: 0.4rem;
 }
 
 nav {
