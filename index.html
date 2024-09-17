@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,54 +14,65 @@
             <h3>Arina</h3>
         </div>
         <div id="myPhoto" class="photo">
-            <img src="img/photo.png" alt="photo"/>
+            <img src="img/photo.png" alt="photo" width="4282" height="3962"/>
         </div>
 
-        <aside class="wrapper">
-            <div class="loc">
-                <h1>Location:</h1>
-                <h5>Saint Petersburg</h5>
-            </div>
-            <div class="phone" id="phone" onclick="copyText(this)">
-                <h1>Phone:</h1>
-                <span><h5>+7 (937)-994-84-12</h5></span>
-            </div>
-            <div class="email" id="email" onclick="copyText(this)">
-                <h1>Email:</h1>
-                <span><h5>arinaka.ha@yandex.ru</h5></span>
-            </div>
-            <div class="git" id="git" onclick="copyText(this)">
-                <h1>GitHub:</h1>
-                <span><h5>https://github.com/ar1naka</h5></span>
-            </div>
-        </aside>
+        <table class="wrapper">
+            <tr>
+                <td>
+                    <dt>
+                        <h1>Location:</h1>
+                    </dt>
+                    <dd class="loc">
+                        <a href="https://ru.wikipedia.org/wiki/Санкт-Петербург">Saint Petersburg</a>
+                    </dd>
+                </td>
+                <td>
+                    <dt>
+                        <h1>Phone:</h1>
+                    </dt>
+                    <dd>
+                        <a href="tel:+79379948412">+7 (937)-994-84-12</a>
+                    </dd>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dt>
+                        <h1>Email:</h1>
+                    </dt>
+                    <dd>
+                        <a href="mailto:arinaka.ha@yandex.ru">arinaka.ha@yandex.ru</a>
+                    </dd>
+                </td>
+                <td>
+                    <dt>
+                        <h1>GitHub:</h1>
+                    </dt>
+                    <dd>
+                        <a href="https://github.com/ar1naka">https://github.com/ar1naka</a>
+                    </dd>
+                </td>
+            </tr>
+        </table>
+
+
 
     </div>
 </header>
 
-<script>
-    function copyText(element) {
-        const span = element.querySelector('span');
-        const range = document.createRange();
-        range.selectNodeContents(span);
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-        document.execCommand("copy");
-        window.getSelection().removeAllRanges();
-    }
-</script>
 
 <div class="middle">
     <div class="wrap">
         <div class="intro">
-            <strong>О себе:</strong>
-            <h3>Добро пожаловать, юный маг! Меня зовут Арина, и я обучаюсь на третьем курсе факультета Магии Вычислений в Университете ИТМО, где
+            <strong lang="ru">О себе:</strong>
+            <h3 lang="ru"> Добро пожаловать, юный маг! Меня зовут Арина, и я обучаюсь на третьем курсе факультета Магии Вычислений в Университете ИТМО, где
                 изучаю волшебную науку Программирования и Искусственного Интеллекта. В прошлом году я успешно овладела основами Веб-магии, изучая древние руны HTML, CSS и чары JavaScript.
                 Также в течение двух лет я постигаю искусство программирования на языке Java. В пятом семестре мне доверили обучать юных волшебников тайнам Веб-магии. Я горжусь своими высокими оценками по заклинаниям программирования,
-                алгорифмам и структуре данных. Сейчас я хочу углубиться в чары Frontend, чтобы усовершенствовать свои навыки в этой области. </h3>
+                алгоритмам и структурам данных. Сейчас я хочу углубиться в чары Frontend, чтобы усовершенствовать свои навыки в этой области. </h3>
         </div>
         <div class="skill">
-            <h1>Навыки:</h1>
+            <h1 lang="ru">Навыки:</h1>
             <ol>
                 <li>Java</li>
                 <li>Spring</li>
@@ -79,7 +90,7 @@
 <div id="video" class="video">
     <img src="img/cat.gif" alt="photo" style="display: none;">
 </div>
-<button id="butt">Увидеть котенка :)</button>
+<button lang="ru" id="butt">Увидеть котенка :)</button>
 <script>
     const but = document.getElementById("butt");
     const video = document.getElementById("video");
@@ -101,8 +112,8 @@
 
 <blockquote class="quote">
     <p>The truth. It is a beautiful and terrible thing, and should therefore be treated with great caution.
-        <dfn >
-            <p>Правда — это прекраснейшая, но одновременно и опаснейшая вещь. А потому к ней надо подходить с превеликой осторожностью. </p>
+        <dfn>
+            <p lang="ru">Правда — это прекраснейшая, но одновременно и опаснейшая вещь. А потому к ней надо подходить с превеликой осторожностью. </p>
         </dfn>
     </p>
     <cite>Albus Dumbledore</cite>
@@ -121,10 +132,9 @@
                            (_.•´/|\`•._)
                             (_.:._)
 </pre>
-</body>
-
 <footer>
-    <a href="#">Arina</a> &copy; 2024-2024 by Me
+    &copy; 2024-2024 by Me
     <address>arinaka.ha@yandex.ru</address>
 </footer>
+</body>
 </html>
