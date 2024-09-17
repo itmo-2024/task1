@@ -63,7 +63,7 @@ html body main section section {
 
 html body main section article p,
 html body main section section p {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 html body main section article h1,
@@ -78,7 +78,7 @@ html body main section article dl {
 
 html body main section section article {
     border: var(--small-border-radius) solid var(--border-color);
-    margin: 1.5% 1.5% 1.5% 1.5%;
+    margin: 1.5%;
     width: 97%;
 }
 
@@ -93,7 +93,7 @@ html body main section article table {
     border: var(--huge-border-radius) solid var(--border-color);
     border-radius: 20px;
     text-align: center;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 html body main section article table tr {
@@ -111,7 +111,7 @@ html body footer {
 }
 
 html body footer article {
-    margin: 1.5% 1.5% 1.5% 1.5%;
+    margin: 1.5%;
 }
 
 html body footer article p a {
