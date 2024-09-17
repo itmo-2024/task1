@@ -1,0 +1,119 @@
+:root {
+    --border-color: #191970;
+    --text-color: #191970;
+    --background-color: #FFF5EE;
+    --huge-border-radius: 16px;
+    --big-border-radius: 2px;
+    --small-border-radius: 1px;
+}
+
+html body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+html body header {
+    background-color: var(--border-color);
+    height: 36rem;
+    margin: -0.4% -0.4% 0 -0.4%;
+}
+
+html body header .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+html body header .header .main_name {
+    font-size: 7rem;
+    margin: 20rem 1rem 1rem 1rem;
+    color: var(--background-color);
+}
+
+html body header .header .main_photo img {
+    margin: 4rem 2rem 2rem 4rem;
+    height: 28rem !important;
+}
+
+html body main nav {
+    display: inline-block;
+    width: 18%;
+    height: 100%;
+    position: fixed;
+    font-size: 1.5rem;
+    margin: 1.5% 0;
+}
+
+html body main nav ul li a {
+    color: var(--text-color);
+}
+
+html body main section {
+    display: inline-block;
+    width: 75%;
+    margin-left: 20%
+}
+
+html body main section article,
+html body main section section {
+    border: var(--big-border-radius) solid var(--border-color);
+    margin: 1.5% 0;
+    font-size: 1rem;
+    width: 100%;
+}
+
+html body main section article p,
+html body main section section p {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+html body main section article h1,
+html body main section section h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+html body main section article dl {
+    margin-left: 1rem;
+}
+
+html body main section section article {
+    border: var(--small-border-radius) solid var(--border-color);
+    margin: 1.5% 1.5% 1.5% 1.5%;
+    width: 97%;
+}
+
+html body main section section article h2 {
+    text-align: center;
+}
+
+html body main section article table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: var(--border-color);
+    border: var(--huge-border-radius) solid var(--border-color);
+    border-radius: 20px;
+    text-align: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+html body main section article table tr {
+    background: var(--background-color);
+    padding: 10px;
+}
+
+html body main section article table tr td .media_for_fact {
+    align-content: center;
+}
+
+html body footer {
+    border: var(--big-border-radius) solid var(--border-color);
+    margin: 1.5% 1.5% 1.5% 20%;
+}
+
+html body footer article {
+    margin: 1.5% 1.5% 1.5% 1.5%;
+}
+
+html body footer article p a {
+    color: var(--text-color);
+}
