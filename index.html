@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autobiography</title>
+    <meta charset="UTF-8" />
+    <style>
+      .sidenav {
+        height: 100%;
+        width: 260px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-image: url("background.png");
+        background-size: 100%;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      main,
+      .my-header,
+      footer {
+        margin-left: 260px; /* Same as the width of the sidebar */
+        padding: 0px 10px;
+      }
+
+      body {
+        background-color: #e1ceff;
+      }
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .my-header svg {
+        width: calc(100% - 10px);
+        height: 130px;
+      }
+      .my-header rect {
+        width: calc(100% - 10px);
+        height: 100px;
+        fill: #9d88ff;
+      }
+      .my-header h1 {
+        font-size: 36px;
+        margin-left: 30px;
+        margin-top: -100px;
+        position: relative;
+        color: white;
+      }
+      h2 {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+      li {
+        font-size: 20px;
+      }
+      li::marker {
+        font-size: 20px;
+        content: "✦ ";
+      }
+      .main {
+        position: absolute;
+      }
+      #other_element {
+        position: relative;
+      }
+      .color-rect svg {
+        xlmns: "http://www.w3.org/2000/svg";
+        width: 80px;
+        height: 80px;
+      }
+      .color-rect rect {
+        width: 60px;
+        height: 60px;
+        x: 10px;
+        y: 10px;
+        rx: 10px;
+        ry: 10px;
+      }
+      th {
+        font-size: 20px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      td {
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        padding: 5px;
+        background-color: #9d88ff;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="my-header">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" rx="20" ry="20" />
+        </svg>
+        <h1>Привет, я Алиса</h1>
+      </div>
+    </header>
+    <aside>
+      <div class="sidenav">
+        <h2>Содержание:</h2>
+        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+          Обо мне
+        </p>
+        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+          Небольшая биография
+        </p>
+        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+          Топ 5 моих любимых цветов
+        </p>
+        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+          Мой рисунок
+        </p>
+        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+          Контактная информация
+        </p>
+      </div>
+    </aside>
+    <main>
+      <hr style="margin-top: 40px; margin-bottom: -20px" />
+      <section>
+        <h2><i>Обо мне:</i></h2>
+        <ul style="margin-top: -20px">
+          <div
+            style="
+              width: 120%;
+              height: 60px;
+              margin-left: -50px;
+              background-color: #9effe7;
+            "
+          ></div>
+          <li style="margin-top: -40px; margin-bottom: 10px">
+            Я учусь на третьем курсе <b>КТ ИТМО</b>
+          </li>
+          <div
+            style="
+              width: 120%;
+              height: 60px;
+              margin-left: -50px;
+              background-color: #92e0ff;
+            "
+          ></div>
+          <li style="margin-top: -40px; margin-bottom: 10px">
+            Я стажёр-разработчик в
+            <b><a href="https://yandex.ru/maps">Геосервисах Яндекса</a></b>
+          </li>
+          <div
+            style="
+              width: 120%;
+              height: 60px;
+              margin-left: -50px;
+              background-color: #aeb6ff;
+            "
+          ></div>
+          <li style="margin-top: -40px; margin-bottom: 10px">
+            Я прошла три курса по <b>C++</b>
+          </li>
+          <div
+            style="
+              width: 120%;
+              height: 60px;
+              margin-left: -50px;
+              background-color: #e99fff;
+            "
+          ></div>
+          <li style="margin-top: -40px; margin-bottom: 10px">
+            У меня ужасное чувство стиля :)
+          </li>
+        </ul>
+      </section>
+      <hr style="margin-top: 40px; margin-bottom: -20px" />
+      <section>
+        <h2><i>Небольшая биография:</i></h2>
+        <canvas
+          width="720"
+          height="400"
+          style="margin-left: 10px; margin-top: -10px"
+          class="main"
+        ></canvas>
+        <script>
+          const canvas = document.querySelector("canvas");
+          const ctx = canvas.getContext("2d");
+          var width = canvas.width - 20;
+          var height = canvas.height - 20;
+          ctx.strokeStyle = "white";
+          ctx.beginPath();
+          ctx.roundRect(0, 0, width + 20, height + 20, 20);
+          ctx.stroke();
+          ctx.fillStyle = "white";
+          ctx.fill();
+
+          // Create linear gradient
+          const grad = ctx.createLinearGradient(0, 0, width, 0);
+          grad.addColorStop(0, "#ff9f88");
+          grad.addColorStop(1, "#ffdf88");
+
+          // Fill rectangle with gradient
+          ctx.fillStyle = grad;
+          ctx.fillRect(10, 10, width, height);
+        </script>
+        <div
+          id="other_element"
+          class="main"
+          style="margin-left: 40px; margin-top: 40px; margin-right: 50px"
+        >
+          <p style="font-size: 20px; text-align: justify; width: 660px">
+            Я родилась в городе Воронеже и с восьмого класса начала заниматься
+            программированием. Поначалу я изучала алгоритмы и структуры данных,
+            но оказавшись в Яндекс Лицее поняла, что спортивное программирование
+            -- не самый интересный вид программирования. Потом я поступила на КТ
+            ИТМО, и сначала мне всё нравилось, но вскоре я поняла, что ненавижу
+            математику. К счастью, были предметы, благодаря которым я не жалела,
+            что пошла на КТ, например курс C++, курс продвинутого C++ и курс C++
+            от ШАДа. Недавно я устроилась на стажировку в Яндекс, чтобы получить
+            опыт бэкенд разработки на C++, и мне очень нравится!
+            <s>Но на самом деле мой любимый ЯП это не C++, а haskell.</s>
+          </p>
+        </div>
+      </section>
+      <hr style="margin-top: 50px; margin-bottom: -20px" />
+      <section>
+        <h2><i>Топ 5 моих любимых цветов:</i></h2>
+        <table>
+          <tr>
+            <th>Цвет</th>
+            <th>Код</th>
+            <th>Комментарий</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="color-rect">
+                <svg>
+                  <rect fill="#aeb6ff" />
+                </svg>
+              </div>
+            </td>
+            <td bgcolor="black">
+              <b style="color: #aeb6ff">#AEB6FF</b>
+            </td>
+            <td>
+              Это очень нежный и красивый цвет, который я, кстати, использовала
+              в этом документе выше :)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="color-rect">
+                <svg>
+                  <rect fill="#ff871d" />
+                </svg>
+              </div>
+            </td>
+            <td bgcolor="black"><b style="color: #ff871d">#FF871D</b></td>
+            <td>
+              Больше всего в этом цвете мне нравится его градиент с красным. А
+              еще у меня стул в общаге такого цвета, потому что это очень
+              весёлый цвет)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="color-rect">
+                <svg>
+                  <rect fill="#9a3586" />
+                </svg>
+              </div>
+            </td>
+            <td bgcolor="black"><b style="color: #9a3586">#9A3586</b></td>
+            <td>
+              Мне нравятся очень темные цветы, а такой цвет встречается в черных
+              тюльпанах.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="color-rect">
+                <svg>
+                  <rect fill="#dea3ff" />
+                </svg>
+              </div>
+            </td>
+            <td bgcolor="black"><b style="color: #dea3ff">#DEA3ff</b></td>
+            <td>
+              Мне кажется, этот цвет хорошо сочетается с предыдущим, но никому
+              кроме меня так не кажется...
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="color-rect">
+                <svg>
+                  <rect fill="#38ffff" />
+                </svg>
+              </div>
+            </td>
+            <td bgcolor="black"><b style="color: #38ffff">#38FFFF</b></td>
+            <td>Этот цвет любят все :)</td>
+          </tr>
+        </table>
+        <h3 style="font-size: 25px; margin-top: 0px; margin-bottom: 0px">
+          <i>Почетные упоминания:</i>
+        </h3>
+        <svg
+          width="500"
+          height="100"
+          xlmns="http://www.w3.org/2000/svg"
+          style="margin-left: 5px"
+        >
+          <rect
+            width="60"
+            height="60"
+            x="10"
+            y="10"
+            rx="10"
+            ry="10"
+            fill="#ff5fb9"
+          />
+          <rect
+            width="60"
+            height="60"
+            x="90"
+            y="10"
+            rx="10"
+            ry="10"
+            fill="#a0ff1e"
+          />
+          <rect
+            width="60"
+            height="60"
+            x="170"
+            y="10"
+            rx="10"
+            ry="10"
+            fill="#ffffff"
+          />
+          <rect
+            width="60"
+            height="60"
+            x="250"
+            y="10"
+            rx="10"
+            ry="10"
+            fill="#9abbe4"
+          />
+          <rect
+            width="60"
+            height="60"
+            x="330"
+            y="10"
+            rx="10"
+            ry="10"
+            fill="#fff0ae"
+          />
+        </svg>
+      </section>
+      <hr style="margin-top: 0px; margin-bottom: -20px;" />
+      <h2><i>Мой рисунок:</i></h2>
+    <img src="slugcat.png" width="500" alt="Красный слизнекот за компом">
+    </img>
+    <p style="font-size: 20px; margin-top: 0px;"><i>Это буквально я...</i></p>
+    <hr style="margin-top: 20px" />
+    </main>
+    <footer>
+      <h4 style="font-size: 20px"><i>Контактная информация:</i></h4>
+      <ol>
+        <li style="margin-top: -20px; text-align: left">
+          <a href="mailto: alvichol.com"> alvichol@gmail.com </a>
+        </li>
+        <li style="text-align: left">
+          <a href="https://t.me/cpp_martyr"> @cpp_martyr </a>
+        </li>
+        <li style="text-align: left">
+          <a href="tel:89202269508"> +79202269508 </a>
+        </li>
+      </ol>
+      <p>Copyright © 2024</p>
+    </footer>
+  </body>
+</html>
+
