@@ -1,0 +1,112 @@
+main {
+  font-size: large;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+header nav {
+  font-size: large;
+}
+
+body {
+  border: 5px, solid, cadetblue;
+}
+
+div h1 {
+  text-decoration: underline;
+  color: ghostwhite;
+  padding-top: 15px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+div.theme {
+  background-color: cadetblue;
+  text-align: center;
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+main section.introduction article {
+  margin-right: 500px;
+  margin-top: 50px;
+  display: block;
+}
+
+main section.introduction aside {
+  margin-right: 100px;
+  margin-top: -40px;
+  float: right;
+}
+
+main section.interests article {
+  margin-right: 500px;
+  display: block;
+}
+
+main section.interests aside {
+  margin-right: 50px;
+  float: right;
+}
+
+main section.interests aside pre {
+  margin-top: 150px;
+}
+
+main section.introduction address ul {
+  list-style: none;
+  text-align: left;
+}
+
+main section.introduction address ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+table {
+  width: 25%;
+}
+
+tr {
+  text-align: center;
+}
+
+table,
+thead,
+th,
+tr,
+td {
+  border: 1px solid #333;
+}
+
+footer {
+  background-color: cadetblue;
+  text-align: center;
+  height: 25px;
+}
+
+footer p {
+  padding-top: 3px;
+  color: ghostwhite;
+}
