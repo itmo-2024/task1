@@ -1,0 +1,127 @@
+html {
+  background-image: url(images/back.jpg);
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+}
+
+h1 {
+  color: rgb(250, 63, 219);
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 200%;
+}
+h2 {
+  color: rgb(250, 63, 219);
+}
+
+h3 {
+  color: rgb(250, 63, 219);
+}
+
+h4 {
+  color: rgb(250, 63, 219);
+}
+
+article {
+  border: 2px;
+  border-color: rgb(250, 63, 219);
+}
+
+a:link {
+  color: rgb(0, 255, 0);
+}
+
+a:visited {
+  color: rgb(0, 255, 0);
+}
+
+nav {
+  max-width: auto;
+  color: aqua;
+  text-align: center;
+  font-size: 200%;
+  padding: 10px;
+  max-height: fit-content;
+}
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.factsaboutMe {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 150%;
+}
+
+.facts {
+  color: rgb(250, 63, 219);
+  width: auto;
+  max-height: fit-content;
+  font-size: 200%;
+}
+
+.facts li {
+  display: block;
+}
+
+.horizontaly {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.horizontaly li {
+  display: inline-block;
+}
+.WELCOME {
+  display: inline-block;
+  max-width: fit-content;
+  max-height: fit-content;
+  border: 5px solid rgb(0, 255, 0);
+  padding: 10px;
+  background-color: rgb(152, 75, 16);
+  text-align: center;
+  color: cyan;
+  font-size: 300%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.gif {
+  display: inline-block;
+}
+
+.alignleft {
+  margin-right: auto;
+}
+
+.song {
+  color: rgb(255, 255, 0);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maininfo {
+  font-size: 150%;
+  color: rgb(250, 63, 219);
+}
+
+.questions {
+  max-width: auto;
+  max-height: fit-content;
+  border: 2px solid cyan;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
