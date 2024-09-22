@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "courier new", sans-serif;
+    }
+    h1 {
+      color: dimgray;
+    }
+    h2 {
+      color: dimgray;
+      font-family: "courier new", sans-serif;
+    }
+    h3 {
+      color: dimgray;
+      font-family: "courier new", sans-serif;
+    }
+    p {
+      color: darkolivegreen;
+      font-family: 'courier new', serif;
+    }
+  </style>
+  <title>task1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: whitesmoke;">
+<header>
+  <h1>Привет, меня зовут Саша!</h1>
+  <p>Я буду вашим новым студентом в Хогвартсе!</p>
+</header>
+<nav>
+  <ul>
+    <li><a href="#about">обо мне</a></li>
+    <li><a href="#hobbies">мои хобби</a></li>
+    <li><a href="#goals">цели</a></li>
+    <li><a href="#fun-facts">парочка интересных фактов</a></li>
+  </ul>
+</nav>
+<main>
+  <section id="about">
+    <h2>обо мне</h2>
+    <article>
+      <p>Я родилась в Оренбурге (да, да, там находится 'Черный дельфин'). <br> С детства я увлекалась творчеством и точными науками. <br> Сейчас я обучаюсь на втором курсе факультета ИС/Software Engineering в Университет ИТМО. <br> Также я увлекаюсь скалолазаньем и хочу в будущем попробовать себя в большом теннисе. <br> У меня есть забавное прозвище - Чучундра, меня так называют из-за того, что я постоянно переживаю <br> и могу тупить в самых простых вещах.</p>
+      <figure>
+        <img src="images/photo_2024-09-23-00.11.53.png" width="350">
+        <figcaption>мое фото</figcaption>
+      </figure>
+    </article>
+  </section>
+  <section id="hobbies">
+    <h2>мои хобби</h2>
+      <style>
+        body {
+          color: darkolivegreen;
+          font-family: 'courier new', serif;
+        }
+      </style>
+      <li>Скалолазанье</li>
+      <li>Уже несколько лет я занимаюсь фотографией.</li>
+      <figure>
+        <img src="images/IMG_9073.gif" width="150">
+        <figcaption>видео с моей старой съемки</figcaption>
+      </figure>
+      <li>Рисование (закончила художественную школу с золотым дипломом) </li>
+  </section>
+  <section id="goals">
+    <h2>Цели</h2>
+      <p>Научиться основам Frontend разработки</p>
+      <p>Пройти стажировку в крупной компании и сделать все, чтобы получить оффер</p>
+      <p>Побывать на Гаваях</p>
+  </section>
+  <section id="fun-facts">
+    <h2>Интересные факты</h2>
+    <dl>
+      <li>Необычное школьное достижение:</li>
+      <dd>Я писала всерос по химии и дошла до финала</dd>
+      <li>Домашнее животное:</li>
+      <dd>Восточно-Европейская овчарка - Гранд</dd>
+      <figure>
+        <img src="images/photo_2024-09-23-00.02.57.png" width="150">
+        <figcaption>мой пёсик</figcaption>
+      </figure>
+      <li>Кем я успела поработать за 19 лет жизни:</li>
+      <dd>Садовник на городских клумбах <br> Продавец в ТЦ <br> Детский/взрослый фотограф <br> Модель <br> Официантка <br> SMM агент <br> Помощник библиотекаря (меня даже показывали в новостях моего региона) <br> Тестировщик программ <br> Работать я начала в 14 лет, и с тех пор я обрела финансовую независимость</dd>
+    </dl>
+  </section>
+  <footer>
+    <h3>Связаться со мной</h3>
+    <form action="#" method="post">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </footer>
+</main>
+<aside>
+  <h2>Спасибо, что прочитали мое письмо! Надеюсь вы примите меня в Хогвартс и я научусь летать на метле.</h2>
+  <p>С наилучшими пожеланиями, Шипилова Александара.</p>
+</aside>
+</body>
+</html>
