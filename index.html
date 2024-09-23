@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .body {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .info-card {
+            flex: 1;
+            text-align: center;
+            background-color: darkolivegreen;
+            color: beige;
+            padding: 40px 20px;
+            position: relative;
+            max-width: 300px;
+        }
+
+        .info-card img {
+            border-radius: 50%;
+            border: 4px solid beige;
+            background-color: beige;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info-card h1 {
+            margin-top: 15px;
+            font-size: 26px;
+        }
+
+        .info-card hr {
+            width: 50px;
+            height: 2px;
+            background-color: beige;
+            border: none;
+            margin: 20px auto;
+        }
+
+        .info-card .social-links::before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: beige;
+            margin: 30px auto;
+            border: 2px solid beige;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-links div {
+            margin-bottom: 10px;
+        }
+
+        .social-links .circle {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: beige;
+            border: 2px solid darkolivegreen;
+            overflow: hidden;
+        }
+
+        .social-links .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .social-links .circle:hover {
+            background-color: darkolivegreen;
+            border-color: beige;
+        }
+
+        .social-links::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: beige;
+            margin: 10px auto;
+            border: 2px solid beige;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .main {
+            flex: 2;
+            padding: 20px;
+            background-color: beige;
+        }
+
+        .main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main p {
+            margin: 15px;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+            display: flex;
+        }
+
+         .card {
+            width: 200px;
+            height: 300px;
+            background: #eee;
+            border-radius: 40px;
+            margin: 40px 40px;
+            list-style: none;
+            transition: all 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-name {
+            font-weight: bold;
+        }
+
+        .card-info {
+            display: none;
+        }
+
+        .card:hover {
+            transition: all 1s;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .card:hover .card-name {
+            display: none;
+        }
+
+        .card:hover .card-info {
+            display: block;
+        }
+
+        .card-info ol li {
+            margin: 10px;
+        }
+
+        h3 {
+            margin: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: darkolivegreen;
+            color: beige;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            filter: brightness(150%);
+        }
+
+        footer {
+            text-align: right;
+        }
+    </style>
+    <title>Анкета Коробова Ивана</title>
+</head>
+<body>
+<div class="body">
+    <aside class="info-card">
+        <img src="https://i.pinimg.com/736x/7b/f3/e7/7bf3e7f7f1810c5540f83cddd0ac1d2f.jpg" alt="My photo">
+        <header>
+            <h1>Коробов Иван</h1>
+        </header>
+        <hr>
+        <address>
+            <figure class="social-links">
+                <div>
+                    <a href="https://vk.com" class="circle">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/1200px-VK_Compact_Logo_%282021-present%29.svg.png" alt="VK">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://t.me" class="circle">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://instagram.com" class="circle">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://facebook.com" class="circle">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com" class="circle">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/360px-GitHub_Invertocat_Logo.svg.png" alt="GitHub">
+                    </a>
+                </div>
+            </figure>
+        </address>
+    </aside>
+
+    <main class="main">
+        <section>
+            <h2>Обо мне</h2>
+            <article>
+                <p>Я родился и вырос в городе <em>Санкт-Петербург</em>.</p>
+                <p>На данный момент обучаюсь в университете <strong><mark>ITMO</mark></strong>.</p>
+            </article>
+            <p>Чтобы вы лучше могли меня понять, я составил список основных моих хобби:</p>
+            <ul>
+                <li class="card">
+                    <div class="card-name">
+                        Программирование
+                    </div>
+                    <div class="card-info">
+                        <ol>
+                            <li>C/C++</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                        </ol>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-name">Музыка</div>
+                    <div class="card-info">
+                        <ol>
+                            <li>Phonk</li>
+                            <li>Hyper Pop</li>
+                            <li>Rap</li>
+                        </ol>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-name">Спорт</div>
+                    <div class="card-info">
+                        <ol>
+                            <li>Фехтование</li>
+                            <li>Тяжелая атлетика</li>
+                            <li>Бег</li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Форма для обратной связи</h3>
+            <form>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов">
+
+                <label for="email">Email для связи:</label>
+                <input type="email" id="email" name="email" placeholder="ivan@yandex.ru">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" placeholder="Текст сообщения"></textarea>
+            </form>
+            <button>Отправить</button>
+        </section>
+
+        <footer>
+            <h4>&copy; 2024 Коробов Иван</h4>
+        </footer>
+    </main>
+</div>
+</body>
+</html>
