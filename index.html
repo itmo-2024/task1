@@ -6,9 +6,17 @@
     <title> HW1 </title>
     <link rel="stylesheet" href="styles.css">
     <style>
+
         .hidden {
-            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
         }
+
+        .visible {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
     </style>
 </head>
 
@@ -20,35 +28,37 @@
     <div class="container">
         <div class="content">
             <h2>Содержание</h2>
-            <ol>
-                <li><a href="#" onclick="toggleBlock('info')">Контактная информация</a></li>
-                <li><a href="#" onclick="toggleBlock('biography')">Биография</a></li>
-                <li><a href="#" onclick="toggleBlock('stack')">Стек</a></li>
-                <li><a href="#" onclick="toggleBlock('button')">Кнопочка!</a></li>
-                <li><a href="#" onclick="toggleBlock('explosion')">Изображение</a></li>
-                <li><a href="#" onclick="toggleBlock('marketing')">Реклама!</a></li>
-                <li><a href="#" onclick="toggleBlock('quote')">цитата</a></li>
-            </ol>
+            <nav>
+                <ol>
+                    <li><a href="#" onclick="toggleBlock('info')">Контактная информация</a></li>
+                    <li><a href="#" onclick="toggleBlock('biography')">Биография</a></li>
+                    <li><a href="#" onclick="toggleBlock('stack')">Стек</a></li>
+                    <li><a href="#" onclick="toggleBlock('button')">Кнопочка!</a></li>
+                    <li><a href="#" onclick="toggleBlock('explosion')">Изображение</a></li>
+                    <li><a href="#" onclick="toggleBlock('marketing')">Реклама!</a></li>
+                    <li><a href="#" onclick="toggleBlock('quote')">Цитата</a></li>
+                </ol>
+            </nav>
         </div>
 
         <div id = "quote" class="quote hidden">
             <h3>Цитата дня</h3>
-            <p>“Просыпался в 6 часов, перебудил всех; но от лени не встал и проспал до 9.”</p>
+            <blockquote>”<em>Просыпался в 6 часов, перебудил всех; но от лени не встал и проспал до 9.</em>”</blockquote>
         </div>
 
         <div id ="marketing" class="advertisement hidden">
             <h3>Реклама</h3>
-            <p>Здесь могла быть ваша реклама</p>
+            <p><i>Здесь могла быть ваша реклама</i></p>
         </div>
 
         <div id="info" class="info hidden">
             <div class="text-container">
-                <h2 class="into_h">Контактная информация</h2>
-                <p><strong>ФИО:</strong> Коршунов Илья Константинович</p>
-                <p><strong>Возраст:</strong> 20 лет</p>
-                <p><strong>Телефон:</strong> 8-929-637-75-25</p>
-                <p><strong>Telegram:</strong> <a href="https://t.me/engharin" target="_blank">https://t.me/engharin</a>
-                </p>
+                <dl class="into_h">Контактная информация</dl>
+                <dt><strong>ФИО:</strong></dt><dl>Коршунов Илья Константинович</dl> 
+                <dt><strong>Возраст:</strong></dt><dl>20 лет</dl> 
+                <dt><strong>Телефон:</strong></dt><dl>8-929-637-75-25</dl> 
+                <dt><strong>Tg:</strong></dt> <dl><a href="https://t.me/engharin" target="_blank">https://t.me/engharin</a>
+                </dl>
             </div>
             <div class="photo">
                 <img src="images/photo.jpg" alt="Мое фото">
@@ -106,7 +116,11 @@
         </div>
 
         <button class="fancy-button hidden" id="button"><i>Кнопочка!</i></button>
-        <img class="explosion hidden" id="explosion" src="images/explosion.gif" alt="Взрыв">
+        <figure class="explosion hidden" id="explosion">
+            <img src="images/explosion.gif" style="width: 100%;" alt="Взрыв">
+            <figcaption style="text-align: center;">Анимация взрыва</figcaption>
+        </figure>
+
     </div>
 
     <footer style="background-color: brown; text-align: center; padding: 10px; color: greenyellow;">
@@ -116,10 +130,12 @@
     <script>
         function toggleBlock(blockId) {
             const block = document.getElementById(blockId);
-            if (!block.classList.contains('hidden')) {
+            if (block.classList.contains('visible')) {
+                block.classList.remove('visible');
                 block.classList.add('hidden');
             } else {
                 block.classList.remove('hidden');
+                block.classList.add('visible');
             }
         }
     </script>
