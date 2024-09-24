@@ -132,6 +132,7 @@ html {
     margin-right: 2%;
     border-radius: 30px;
     width: 30%;
+    min-width: 100px;
 }
 
 .info {
@@ -185,6 +186,7 @@ p {
     flex-grow: 1;
     width: 40%;
     border-radius: 30px;
+    height: fit-content;
 }
 
 .inst {
