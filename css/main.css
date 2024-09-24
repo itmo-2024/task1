@@ -1,0 +1,271 @@
+html {
+    background-image: url("https://fotovideoforum.ru/resources/image/59059");
+}
+
+.navbar {
+    position: relative;
+    margin: 30px auto 0 auto;
+    line-height: 80px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #b0c4b1;
+    text-align: center;
+}
+
+.belowNav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.box {
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #edafb8;
+}
+
+.boxText {
+    display: block;
+    padding: 0 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.boxText:hover {
+    border-radius: 20px;
+    background-color: #001d3d;
+}
+
+.center {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.data {
+    width: 150px;
+}
+
+
+.icon1 {
+    float: right;
+    height: 30px;
+    margin-top: -4%;
+}
+
+.icon2,
+.icon3 {
+    float: right;
+    height: 30px;
+    margin-top: -2%;
+}
+
+.div1 {
+    width: clamp(60px + 10vw, 250px + 2.30vw, 21vw);
+    height: 15px;
+}
+
+.div2 {
+    width: clamp(60px + 10vw, 280px + 2.30vw, 23vw);
+    height: 15px;
+}
+
+.div3 {
+    width: clamp(60px + 10vw, 310px + 2.30vw, 24vw);
+    height: 15px;
+}
+
+.div4 {
+    width: clamp(60px + 10vw, 320px + 2.30vw, 25vw);
+    height: 15px;
+}
+
+.block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.left,
+.right,
+.main {
+    flex-grow: 1;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.left, .right {
+    width: 20%;
+    text-align: center;
+}
+
+.advertisement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad {
+    flex-grow: 1;
+    height: 10%;
+    width: 90%;
+    margin: 5px;
+    background: aliceblue;
+    border-radius: 8px;
+    border: 0;
+}
+
+.mainInformation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    flex-grow: 1;
+    margin-right: 2%;
+    border-radius: 30px;
+    width: 30%;
+}
+
+.info {
+    flex-grow: 1;
+    width: 70%;
+}
+
+.main {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 60%;
+    background-color: #d8e2dc;
+    border-radius: 20px;
+}
+
+.resource {
+    margin: 1%;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.invisible:hover {
+    opacity: 1 !important;
+}
+
+.special_text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+p {
+    font-size: clamp(0.75rem, -0.25rem + 2vw, 1.5rem);
+}
+
+.img1 {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.div5 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.img2 {
+    flex-grow: 1;
+    width: 40%;
+    border-radius: 30px;
+}
+
+.inst {
+    flex-grow: 1;
+    margin-left: 5%;
+}
+
+.disableTextDecoration {
+    text-decoration: none
+}
+
+table {
+    border: 1px solid grey;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+th {
+    border: 1px solid grey;
+    width: 40%;
+
+}
+
+
+.nilA {
+    text-align: right;
+}
+
+.img3 {
+    width: 20%;
+}
+
+.img4 {
+    width: 90%;
+}
+
+h5 {
+    text-align: right;
+    font-size: clamp(0.75rem, -0.25rem + 2vw, 1.5rem);
+    margin-right: 2%;
+    margin-bottom: 2%;
+    opacity: 0.1;
+}
+
+summary {
+    font-size: clamp(1.75rem, 0.75rem + 2vw, 3rem);
+    margin-top: 10%;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+article {
+    background-color: #ffe5d9;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#born {
+    margin-bottom: -7%;
+}
+
+#beforeRealize {
+    margin-bottom: -7%;
+}
+
+#It {
+    margin-bottom: -7%;
+}
+
+#hard {
+    margin-bottom: -7%;
+}
+
+#ITMO {
+    margin-bottom: -2%;
+}
+
+.mar {
+    margin-left: 2%;
+    margin-right: 2%;
+}
