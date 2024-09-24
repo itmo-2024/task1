@@ -18,7 +18,7 @@
       }
 
       main,
-      .my-header,
+      header,
       footer {
         margin-left: 260px;
         padding: 0px 10px;
@@ -30,25 +30,16 @@
       * {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
-      .my-header svg {
-        width: calc(100% - 10px);
-        height: 130px;
-      }
-      .my-header rect {
-        width: calc(100% - 10px);
-        height: 100px;
-        fill: #9d88ff;
-      }
-      .my-header h1 {
+      h1 {
         font-size: 36px;
-        margin-left: 30px;
-        margin-top: -100px;
         color: white;
+        text-align: center;
       }
       h2 {
         font-size: 30px;
         margin-left: 20px;
         margin-top: 30px;
+        font-style: italic;
       }
       li {
         font-size: 20px;
@@ -90,37 +81,42 @@
 
   <body>
     <header>
-      <div class="my-header">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="10" rx="20" ry="20" />
-        </svg>
-        <h1>Привет, я Алиса</h1>
+      <div
+        style="
+          background-color: #9d88ff;
+          height: 120px;
+          margin-left: 10px;
+          margin-right: 10px;
+          border-radius: 30px;
+        "
+      >
+        <h1 style="position: relative; top: 30px">Привет, я Алиса</h1>
       </div>
     </header>
     <aside>
       <div class="sidenav">
         <h2>Содержание:</h2>
         <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
-          Обо мне
+          <a href="#about-me"> Обо мне </a>
         </p>
         <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
-          Небольшая биография
+          <a href="#bio">Небольшая биография</a>
         </p>
         <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
-          Топ 5 моих любимых цветов
+          <a href="#colors">Топ 5 моих любимых цветов</a>
         </p>
         <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
-          Мой рисунок
+          <a href="#picture">Мой рисунок</a>
         </p>
         <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
-          Контактная информация
+          <a href="#contacts">Контактная информация</a>
         </p>
       </div>
     </aside>
     <main>
-      <hr style="margin-top: 40px; margin-bottom: -20px" />
+      <hr style="margin-top: 20px; margin-bottom: -20px" />
       <section>
-        <h2><i>Обо мне:</i></h2>
+        <h2 id="about-me">Обо мне:</h2>
         <ul style="margin-top: -20px">
           <div
             style="
@@ -171,56 +167,42 @@
       </section>
       <hr style="margin-top: 40px; margin-bottom: -20px" />
       <section>
-        <h2><i>Небольшая биография:</i></h2>
-        <div style="position: static; height: 400px">
-          <canvas
-            width="720"
-            height="400"
-            style="margin-left: 10px; margin-top: -10px; position: absolute"
-          ></canvas>
-          <script>
-            const canvas = document.querySelector("canvas");
-            const ctx = canvas.getContext("2d");
-            var width = canvas.width - 20;
-            var height = canvas.height - 20;
-            ctx.strokeStyle = "white";
-            ctx.beginPath();
-            ctx.roundRect(0, 0, width + 20, height + 20, 20);
-            ctx.stroke();
-            ctx.fillStyle = "white";
-            ctx.fill();
-
-            // Create linear gradient
-            const grad = ctx.createLinearGradient(0, 0, width, 0);
-            grad.addColorStop(0, "#ff9f88");
-            grad.addColorStop(1, "#ffdf88");
-
-            // Fill rectangle with gradient
-            ctx.fillStyle = grad;
-            ctx.fillRect(10, 10, width, height);
-          </script>
-          <div
-            style="margin-left: 40px; margin-right: 50px; position: absolute"
+        <h2 id="bio">Небольшая биография:</h2>
+        <div
+          style="
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 30px;
+            border: 10px solid white;
+            box-sizing: border-box;
+            background: linear-gradient(#e66465, #ffe333);
+          "
+        >
+          <p
+            style="
+              font-size: 20px;
+              text-align: justify;
+              padding: 20px;
+              margin-top: -5px;
+              margin-bottom: -5px;
+            "
           >
-            <p style="font-size: 20px; text-align: justify; width: 660px">
-              Я родилась в городе Воронеже и с восьмого класса начала заниматься
-              программированием. Поначалу я изучала алгоритмы и структуры
-              данных, но оказавшись в Яндекс Лицее поняла, что спортивное
-              программирование -- не самый интересный вид программирования.
-              Потом я поступила на КТ ИТМО, и сначала мне всё нравилось, но
-              вскоре я поняла, что ненавижу математику. К счастью, были
-              предметы, благодаря которым я не жалела, что пошла на КТ, например
-              курс C++, курс продвинутого C++ и курс C++ от ШАДа. Недавно я
-              устроилась на стажировку в Яндекс, чтобы получить опыт бэкенд
-              разработки на C++, и мне очень нравится!
-              <s>Но на самом деле мой любимый ЯП это не C++, а haskell.</s>
-            </p>
-          </div>
+            Я родилась в городе Воронеже и с восьмого класса начала заниматься
+            программированием. Поначалу я изучала алгоритмы и структуры данных,
+            но оказавшись в Яндекс Лицее поняла, что спортивное программирование
+            -- не самый интересный вид программирования. Потом я поступила на КТ
+            ИТМО, и сначала мне всё нравилось, но вскоре я поняла, что ненавижу
+            математику. К счастью, были предметы, благодаря которым я не жалела,
+            что пошла на КТ, например курс C++, курс продвинутого C++ и курс C++
+            от ШАДа. Недавно я устроилась на стажировку в Яндекс, чтобы получить
+            опыт бэкенд разработки на C++, и мне очень нравится!
+            <del>Но на самом деле мой любимый ЯП это не C++, а haskell.</del>
+          </p>
         </div>
       </section>
       <hr style="margin-bottom: -20px" />
       <section>
-        <h2><i>Топ 5 моих любимых цветов:</i></h2>
+        <h2 id="colors">Топ 5 моих любимых цветов:</h2>
         <table>
           <tr>
             <th>Цвет</th>
@@ -355,13 +337,20 @@
         </svg>
       </section>
       <hr style="margin-top: 0px; margin-bottom: -20px" />
-      <h2><i>Мой рисунок:</i></h2>
-      <img src="slugcat.png" width="500" alt="Красный слизнекот за компом" />
+      <h2 id="picture">Мой рисунок:</h2>
+      <img
+        src="slugcat.png"
+        width="500"
+        height="500"
+        alt="Красный слизнекот за компом"
+      />
       <p style="font-size: 20px; margin-top: 0px"><i>Это буквально я...</i></p>
       <hr style="margin-top: 20px" />
     </main>
     <footer>
-      <h4 style="font-size: 20px"><i>Контактная информация:</i></h4>
+      <h4 id="contacts" style="font-size: 20px">
+        <i>Контактная информация:</i>
+      </h4>
       <ol>
         <li style="margin-top: -20px; text-align: left">
           <a href="mailto: alvichol.com"> alvichol@gmail.com </a>
