@@ -1,0 +1,148 @@
+body {
+    background: #212121;
+    color: #CED0D6;
+}
+
+.composable,.composable:visited {
+    color: #debc7e;
+    font-style: italic;
+}
+
+.keyword {
+    color: #cf8e6d;
+}
+
+.namedargument {
+    color: #467cda;
+}
+
+var {
+    color: #CED0D6;
+}
+
+code > a, code > a:visited {
+    color: #CED0D6;
+    text-decoration: none;
+}
+a {
+    color: lightblue;
+}
+a:visited {
+    color: lightpink;
+}
+code > a:hover {
+    text-decoration: underline;
+}
+pre {
+    white-space: pre-wrap;
+}
+.stringliteral {
+    color: #6aab73;
+}
+
+.intliteral {
+    color: #2aacb8;
+}
+
+.field, .field:visited {
+    color: #c77dbb;
+}
+
+article header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.composeDocsCodeSample {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*background-color: gray;*/
+}
+
+div.composeDocsCodeSample > * {
+    margin: 16px;
+    max-width: 100%;
+    height: auto;
+}
+
+img.detailsCodeSample {
+    background-color: rgb(32, 33, 36);
+    padding: 32px;
+    border-radius: 32px;
+}
+
+img.detailsGIF {
+    border-radius: 32px;
+}
+
+article header h1, article header h2 {
+    margin: 0;
+}
+
+article header h2 {
+    align-self: flex-end;
+}
+
+.card {
+    border-radius: 16px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: #2c2c2c;
+}
+
+dt {
+    font-weight: bold;
+}
+
+pre > code {
+    background-color: #1e1f22;
+    color: #ced0d6;
+    word-wrap: break-word;
+}
+
+samp {
+    background-color: darkgrey;
+    font-weight: bold;
+}
+
+details {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+del::before {
+    content: "-";
+}
+
+del {
+    color: red;
+}
+
+ins::before {
+    content: "+";
+}
+
+ins {
+    color: green;
+}
+
+table {
+    /*width: auto;*/
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding-left: 8px;
+    padding-right: 8px;
+}
