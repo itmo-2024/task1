@@ -17,6 +17,12 @@
         padding-top: 20px;
       }
 
+      .sidenav p {
+        font-size: 20px;
+        margin-top: -10px;
+        margin-left: 20px;
+      }
+
       main,
       header,
       footer {
@@ -24,12 +30,19 @@
         padding: 0px 10px;
       }
 
+      header div {
+        background-color: #9d88ff;
+        height: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 30px;
+      }
+
       body {
         background-color: #e1ceff;
-      }
-      * {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+
       h1 {
         font-size: 36px;
         color: white;
@@ -76,39 +89,35 @@
         background-color: #9d88ff;
         color: #000;
       }
+      mark {
+        background-color: transparent;
+        font-weight: bold;
+      }
     </style>
   </head>
 
   <body>
     <header>
-      <div
-        style="
-          background-color: #9d88ff;
-          height: 120px;
-          margin-left: 10px;
-          margin-right: 10px;
-          border-radius: 30px;
-        "
-      >
+      <div>
         <h1 style="position: relative; top: 30px">Привет, я Алиса</h1>
       </div>
     </header>
     <aside>
       <div class="sidenav">
         <h2>Содержание:</h2>
-        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+        <p>
           <a href="#about-me"> Обо мне </a>
         </p>
-        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+        <p>
           <a href="#bio">Небольшая биография</a>
         </p>
-        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+        <p>
           <a href="#colors">Топ 5 моих любимых цветов</a>
         </p>
-        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+        <p>
           <a href="#picture">Мой рисунок</a>
         </p>
-        <p style="font-size: 20px; margin-top: -10px; margin-left: 20px">
+        <p>
           <a href="#contacts">Контактная информация</a>
         </p>
       </div>
@@ -127,7 +136,8 @@
             "
           ></div>
           <li style="margin-top: -40px; margin-bottom: 10px">
-            Я учусь на третьем курсе <b>КТ ИТМО</b>
+            Я учусь на третьем курсе
+            <mark>КТ ИТМО</mark>
           </li>
           <div
             style="
@@ -139,7 +149,9 @@
           ></div>
           <li style="margin-top: -40px; margin-bottom: 10px">
             Я стажёр-разработчик в
-            <b><a href="https://yandex.ru/maps">Геосервисах Яндекса</a></b>
+            <mark
+              ><a href="https://yandex.ru/maps">Геосервисах Яндекса</a></mark
+            >
           </li>
           <div
             style="
@@ -150,7 +162,7 @@
             "
           ></div>
           <li style="margin-top: -40px; margin-bottom: 10px">
-            Я прошла три курса по <b>C++</b>
+            Я прошла три курса по <mark>C++</mark>
           </li>
           <div
             style="
