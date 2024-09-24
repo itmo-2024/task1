@@ -20,7 +20,7 @@
       main,
       .my-header,
       footer {
-        margin-left: 260px; /* Same as the width of the sidebar */
+        margin-left: 260px;
         padding: 0px 10px;
       }
 
@@ -43,7 +43,6 @@
         font-size: 36px;
         margin-left: 30px;
         margin-top: -100px;
-        position: relative;
         color: white;
       }
       h2 {
@@ -57,12 +56,6 @@
       li::marker {
         font-size: 20px;
         content: "✦ ";
-      }
-      .main {
-        position: absolute;
-      }
-      #other_element {
-        position: relative;
       }
       .color-rect svg {
         xlmns: "http://www.w3.org/2000/svg";
@@ -179,53 +172,53 @@
       <hr style="margin-top: 40px; margin-bottom: -20px" />
       <section>
         <h2><i>Небольшая биография:</i></h2>
-        <canvas
-          width="720"
-          height="400"
-          style="margin-left: 10px; margin-top: -10px"
-          class="main"
-        ></canvas>
-        <script>
-          const canvas = document.querySelector("canvas");
-          const ctx = canvas.getContext("2d");
-          var width = canvas.width - 20;
-          var height = canvas.height - 20;
-          ctx.strokeStyle = "white";
-          ctx.beginPath();
-          ctx.roundRect(0, 0, width + 20, height + 20, 20);
-          ctx.stroke();
-          ctx.fillStyle = "white";
-          ctx.fill();
+        <div style="position: static; height: 400px">
+          <canvas
+            width="720"
+            height="400"
+            style="margin-left: 10px; margin-top: -10px; position: absolute"
+          ></canvas>
+          <script>
+            const canvas = document.querySelector("canvas");
+            const ctx = canvas.getContext("2d");
+            var width = canvas.width - 20;
+            var height = canvas.height - 20;
+            ctx.strokeStyle = "white";
+            ctx.beginPath();
+            ctx.roundRect(0, 0, width + 20, height + 20, 20);
+            ctx.stroke();
+            ctx.fillStyle = "white";
+            ctx.fill();
 
-          // Create linear gradient
-          const grad = ctx.createLinearGradient(0, 0, width, 0);
-          grad.addColorStop(0, "#ff9f88");
-          grad.addColorStop(1, "#ffdf88");
+            // Create linear gradient
+            const grad = ctx.createLinearGradient(0, 0, width, 0);
+            grad.addColorStop(0, "#ff9f88");
+            grad.addColorStop(1, "#ffdf88");
 
-          // Fill rectangle with gradient
-          ctx.fillStyle = grad;
-          ctx.fillRect(10, 10, width, height);
-        </script>
-        <div
-          id="other_element"
-          class="main"
-          style="margin-left: 40px; margin-top: 40px; margin-right: 50px"
-        >
-          <p style="font-size: 20px; text-align: justify; width: 660px">
-            Я родилась в городе Воронеже и с восьмого класса начала заниматься
-            программированием. Поначалу я изучала алгоритмы и структуры данных,
-            но оказавшись в Яндекс Лицее поняла, что спортивное программирование
-            -- не самый интересный вид программирования. Потом я поступила на КТ
-            ИТМО, и сначала мне всё нравилось, но вскоре я поняла, что ненавижу
-            математику. К счастью, были предметы, благодаря которым я не жалела,
-            что пошла на КТ, например курс C++, курс продвинутого C++ и курс C++
-            от ШАДа. Недавно я устроилась на стажировку в Яндекс, чтобы получить
-            опыт бэкенд разработки на C++, и мне очень нравится!
-            <s>Но на самом деле мой любимый ЯП это не C++, а haskell.</s>
-          </p>
+            // Fill rectangle with gradient
+            ctx.fillStyle = grad;
+            ctx.fillRect(10, 10, width, height);
+          </script>
+          <div
+            style="margin-left: 40px; margin-right: 50px; position: absolute"
+          >
+            <p style="font-size: 20px; text-align: justify; width: 660px">
+              Я родилась в городе Воронеже и с восьмого класса начала заниматься
+              программированием. Поначалу я изучала алгоритмы и структуры
+              данных, но оказавшись в Яндекс Лицее поняла, что спортивное
+              программирование -- не самый интересный вид программирования.
+              Потом я поступила на КТ ИТМО, и сначала мне всё нравилось, но
+              вскоре я поняла, что ненавижу математику. К счастью, были
+              предметы, благодаря которым я не жалела, что пошла на КТ, например
+              курс C++, курс продвинутого C++ и курс C++ от ШАДа. Недавно я
+              устроилась на стажировку в Яндекс, чтобы получить опыт бэкенд
+              разработки на C++, и мне очень нравится!
+              <s>Но на самом деле мой любимый ЯП это не C++, а haskell.</s>
+            </p>
+          </div>
         </div>
       </section>
-      <hr style="margin-top: 50px; margin-bottom: -20px" />
+      <hr style="margin-bottom: -20px" />
       <section>
         <h2><i>Топ 5 моих любимых цветов:</i></h2>
         <table>
@@ -361,12 +354,11 @@
           />
         </svg>
       </section>
-      <hr style="margin-top: 0px; margin-bottom: -20px;" />
+      <hr style="margin-top: 0px; margin-bottom: -20px" />
       <h2><i>Мой рисунок:</i></h2>
-    <img src="slugcat.png" width="500" alt="Красный слизнекот за компом">
-    </img>
-    <p style="font-size: 20px; margin-top: 0px;"><i>Это буквально я...</i></p>
-    <hr style="margin-top: 20px" />
+      <img src="slugcat.png" width="500" alt="Красный слизнекот за компом" />
+      <p style="font-size: 20px; margin-top: 0px"><i>Это буквально я...</i></p>
+      <hr style="margin-top: 20px" />
     </main>
     <footer>
       <h4 style="font-size: 20px"><i>Контактная информация:</i></h4>
@@ -385,4 +377,3 @@
     </footer>
   </body>
 </html>
-
