@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+    font-style: normal;
+    
+}
+
 body {
     background: #212121;
     color: #CED0D6;
+    font-family: Arial, sans-serif;
 }
 
 .composable,.composable:visited {
@@ -24,6 +40,12 @@ code > a, code > a:visited {
     color: #CED0D6;
     text-decoration: none;
 }
+
+code {
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 13px;
+}
+
 a {
     color: lightblue;
 }
@@ -34,7 +56,7 @@ code > a:hover {
     text-decoration: underline;
 }
 pre {
-    white-space: pre-wrap;
+    white-space: break-spaces;
 }
 .stringliteral {
     color: #6aab73;
@@ -133,16 +155,59 @@ ins {
 }
 
 table {
-    /*width: auto;*/
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 1px solid gray;
     margin-left: auto;
     margin-right: auto;
 }
 
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid grey;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.marklike {
+    background-color: yellow;
+    color: black;
+}
+
+.boldlike {
+    font-weight: bold;
+}
+
+.italiclike {
+    font-style: italic;
+}
+
+.strikethroughlike {
+    text-decoration: line-through;
+}
+
+.underlinelike {
+    text-decoration-line: underline;
+}
+
+.deletelike {
+    text-decoration: line-through solid red;
+    color: red;
+}
+
+.deletelike:before {
+    content: '-';
+}
+
+.insertlike {
+    text-decoration: underline;
+    color: green;
+}
+
+.insertlike:before {
+    content: '+';
+}
+
+code > a.htmltag {
+    text-decoration: underline;
+    color: #debc7e;
 }

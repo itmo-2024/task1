@@ -17,7 +17,8 @@
         </h4>
     </header>
     <p>
-        Писать биографию мне было ооочень лень, поэтому вместо этого я показал как в андроиде можно реализовать некоторые HTML-конструкции, используя Jetpack Compose
+        Писать биографию мне было ооочень лень, поэтому вместо этого я показал как в андроиде можно реализовать
+        некоторые <a href="https://wikipedia.org/wiki/HTML">HTML</a>-конструкции, используя <a href="https://developer.android.com/compose">Jetpack Compose</a>
     </p>
 </article>
 <article class="card">
@@ -28,13 +29,13 @@
         </h4>
     </header>
     <p>
-        Одна из самых базовых возможностей - отрисовывание списков. В Jetpack Compose нет специального функционала для
+        Одна из самых базовых возможностей - отрисовывание списков. В <a href="https://developer.android.com/compose">Jetpack Compose</a> нет специального функционала для
         этого, используется функция
         <code><a class="composable"
                  href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary#Column(androidx.compose.ui.Modifier,androidx.compose.foundation.layout.Arrangement.Vertical,androidx.compose.ui.Alignment.Horizontal,kotlin.Function1)">Column</a>
-            { ... }</code>, рисующая свои элементы сверху вниз. Благодаря тому что во всём Compose интерфейс
-        описывается обычным кодом на Kotlin,
-        можно использовать циклы, if-ы и прочие фичи обычных языков программирования.</p>
+            { ... }</code>, рисующая свои элементы сверху вниз. Благодаря тому что во всём <a href="https://developer.android.com/compose">Compose</a> интерфейс
+        описывается обычным кодом на <a href="https://kotlinlang.org/">Kotlin</a>,
+        можно использовать циклы, <code><span class="keyword">if</span></code>-ы и прочие фичи обычных языков программирования.</p>
     <pre><code class="compose"><a class="composable"
                                   href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary#Column(androidx.compose.ui.Modifier,androidx.compose.foundation.layout.Arrangement.Vertical,androidx.compose.ui.Alignment.Horizontal,kotlin.Function1)">Column</a> {
     <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="intliteral">1</span><a
@@ -69,24 +70,23 @@
     </header>
     <p>
         Возможность красиво выделять и форматировать текст - одна из самых базовых и самых нужных в любом UI-фреймворке.
-        HTML позволяет удобно стилизовывать отдельные фрагменты текста, не меняя всего стиля целиком, в Jetpack Compose
+        <a href="https://wikipedia.org/wiki/HTML">HTML</a> позволяет удобно стилизовывать отдельные фрагменты текста, не меняя всего стиля целиком, в <a href="https://developer.android.com/compose">Jetpack Compose</a>
         же это API немного неудобное и проще менять стиль всего текста сразу
     </p>
-    <h3>Форматирование текста</h3>
     <table>
         <caption>
             <h3>Инструменты стилизации текста</h3>
         </caption>
         <thead>
         <tr>
-            <th scope="col">Отрендеренный HTML тег</th>
-            <th scope="col">Его аналог в Compose</th>
+            <th scope="col">Отрендеренный <a href="https://wikipedia.org/wiki/HTML">HTML</a> тег</th>
+            <th scope="col">Его аналог в <a href="https://developer.android.com/compose">Compose</a></th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td>
-                <mark>Выделенный жёлтым маркером текст</mark>
+                <span class="marklike">Выделенный жёлтым маркером текст</span>
             </td>
             <td>
                     <pre><code><a class="composable"
@@ -95,45 +95,59 @@
     <span class="namedargument">style =</span> <a
                                 href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle">TextStyle</a>(<span
                                 class="namedargument">background =</span> <a
-                                href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color">Color</a>.<a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Yellow()" class="field">Yellow</a>)
+                                href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color">Color</a>.<a
+                                href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Yellow()"
+                                class="field">Yellow</a>)
 )</code></pre>
             </td>
         </tr>
         <tr>
-            <td><b>Жирный текст</b></td>
+            <td>
+                <span class="boldlike">Жирный текст</span>
+            </td>
             <td>
                 <pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(<span
                         class="stringliteral">"Жирный текст"</span>, <span class="namedargument">fontWeight =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontWeight">FontWeight</a>.<a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontWeight#Bold()" class="field">Bold</a>)</code></pre>
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontWeight#Bold()"
+                        class="field">Bold</a>)</code></pre>
             </td>
         </tr>
         <tr>
-            <td><i>Текст в италике</i></td>
+            <td>
+                <span class="italiclike">Текст в италике</span>
+            </td>
             <td>
                 <pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(<span
                         class="stringliteral">"Текст в италике"</span>, <span
                         class="namedargument">fontStyle =</span> <a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontStyle">FontStyle</a>.<a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontStyle#Italic()"
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontStyle">FontStyle</a>.<a
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/font/FontStyle#Italic()"
                         class="field">Italic</a></code></pre>
             </td>
         </tr>
         <tr>
-            <td><s>Перечёркнутый текст</s></td>
+            <td>
+                <span class="strikethroughlike">Перечёркнутый текст</span>
+            </td>
             <td><pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(
     <span class="stringliteral">"Перечёркнутый текст"</span>,
     <span class="namedargument">style =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle">TextStyle</a>(<span
                         class="namedargument">textDecoration =</span> <a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#LineThrough()" class="field">LineThrough</a>)
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a
+                        href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#LineThrough()"
+                        class="field">LineThrough</a>)
 )</code></pre>
             </td>
         </tr>
         <tr>
-            <td><u>Подчеркнутый текст</u></td>
+            <td>
+                <span class="underlinelike">Подчеркнутый текст</span>
+            </td>
             <td><pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(
     <span class="stringliteral">"Подчёркнутый текст"</span>,
@@ -141,19 +155,20 @@
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle">TextStyle</a>(<span
                         class="namedargument">textDecoration =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a
-                        href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#Underline()" class="field">Underline</a>)
+                        href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#Underline()"
+                        class="field">Underline</a>)
 )</code></pre>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <p>Прямых аналогов тегов <code>&lt;del&gt;</code> и <code>&lt;ins&gt;</code> в Compose нет, но их можно
+                <p>Прямых аналогов тегов <code><a class="htmltag" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/del">&lt;del&gt;</a></code> и <code><a class="htmltag" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ins">&lt;ins&gt;</a></code> в <a href="https://developer.android.com/compose">Compose</a> нет, но их можно
                     реализовать самому</p>
             </td>
         </tr>
         <tr>
             <td>
-                <del>Типо удалённый текст</del>
+                <span class="deletelike">Типо удалённый текст</span>
             </td>
             <td><pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(
@@ -161,16 +176,19 @@
     <span class="namedargument">style =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle">TextStyle</a>(<span
                         class="namedargument">textDecoration =</span> <a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#LineThrough()" class="field">LineThrough</a>, <span
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a
+                        href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#LineThrough()"
+                        class="field">LineThrough</a>, <span
                         class="namedargument">color =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color">Color</a>.<a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Red()"  class="field">Red</a>)
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Red()"
+                        class="field">Red</a>)
 )</code></pre>
             </td>
         </tr>
         <tr>
             <td>
-                <ins>Типо добавленный текст</ins>
+                <span class="insertlike">Типо добавленный текст</span>
             </td>
             <td><pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(
@@ -178,10 +196,13 @@
     <span class="namedargument">style =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle">TextStyle</a>(<span
                         class="namedargument">textDecoration =</span> <a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#Underline()" class="field">Underline</a>, <span
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a
+                        href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#Underline()"
+                        class="field">Underline</a>, <span
                         class="namedargument">color =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color">Color</a>.<a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Green()" class="field">Green</a>)
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Green()"
+                        class="field">Green</a>)
 )</code></pre>
             </td>
         </tr>
@@ -197,13 +218,15 @@
                     <a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/AnnotatedString.Range">Range</a>(<a
                             href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/SpanStyle">SpanStyle</a>(<span
                             class="namedargument">baselineShift =</span> <a
-                            href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift">BaselineShift</a>.<a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift#Subscript()"
+                            href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift">BaselineShift</a>.<a
+                            href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift#Subscript()"
                             class="field">Subscript</a>), <span class="intliteral">5</span>, <span
                             class="intliteral">12</span>),
                     <a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/AnnotatedString.Range">Range</a>(<a
                             href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/SpanStyle">SpanStyle</a>(<span
                             class="namedargument">baselineShift =</span> <a
-                            href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift">BaselineShift</a>.<a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift#Superscript()"
+                            href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift">BaselineShift</a>.<a
+                            href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/BaselineShift#Superscript()"
                             class="field">Superscript</a>), <span class="intliteral">12</span>, <span
                             class="intliteral">20</span>),
         )
@@ -216,34 +239,39 @@
             <td><pre><code><a class="composable"
                               href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Text(kotlin.String,androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.font.FontStyle,androidx.compose.ui.text.font.FontWeight,androidx.compose.ui.text.font.FontFamily,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextDecoration,androidx.compose.ui.text.style.TextAlign,androidx.compose.ui.unit.TextUnit,androidx.compose.ui.text.style.TextOverflow,kotlin.Boolean,kotlin.Int,kotlin.Int,kotlin.Function1,androidx.compose.ui.text.TextStyle)">Text</a>(
     <span class="stringliteral">"Ссылка на сообщение в чате курса Фронтенда."</span>,
-    <span class="namedargument">style =</span> <a href="">TextStyle</a>(<span class="namedargument">color</span> = <a
+    <span class="namedargument">style =</span> <a href="">TextStyle</a>(<span class="namedargument">color =</span> <a
                         href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color">Color</a>.<a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Blue()" class="field">Blue</a>, <span class="namedargument">textDecoration =</span> <a
-                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#Underline()" class="field">Underline</a>)
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color#Blue()"
+                        class="field">Blue</a>, <span class="namedargument">textDecoration =</span> <a
+                        href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/style/TextDecoration">TextDecoration</a>.<a
+                        href="https://developer.android.com/reference/kotlin/androidx/glance/text/TextDecoration#Underline()"
+                        class="field">Underline</a>)
 )</code></pre>
             </td>
         </tr>
         </tbody>
     </table>
     <p>
-        Напоследок посмотрим на такой интересный HTML тэг как <code>&lt;details&gt;</code>. Документация говорит, что
+        Напоследок посмотрим на такой интересный <a href="https://wikipedia.org/wiki/HTML">HTML</a> тэг как <code><a class="htmltag" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/details">&lt;details&gt;</a></code>. Документация говорит, что
         встроенного способа анимировать его открывание и закрывание нет. Для того чтобы как-то скомпенсировать то, что в
-        Compose прямого аналога &lt;details&gt; нет, приведём пример из официальной документации, который за 15 строк
+        <a href="https://developer.android.com/compose">Compose</a> прямого аналога <code><a class="htmltag" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/details">&lt;details&gt;</a></code> нет, приведём пример из официальной документации, который
+        за 15 строк
         реализует его аналог, имеющий к тому же красивую анимацию. Я вставил анимированную гифку, можете посмотреть, как
         выглядит
     </p>
     <div class="composeDocsCodeSample">
-        <img class="detailsCodeSample" width="550"
+        <img class="detailsCodeSample" width="550" height="284.672"
              src="https://developer.android.com/static/develop/ui/compose/images/landing-code-static.svg"
-             alt="Compose код, который всего в 15 строк реализовает свой аналог <details> с анимацией открывания и закрывания"/>
-        <img class="detailsGIF" width="200"
+             alt="Compose код, который всего в 15 строк реализовывает свой аналог <details> с анимацией открывания и закрывания"/>
+        <img class="detailsGIF" width="200" height="362.219px"
              src="https://developer.android.com/static/develop/ui/compose/images/landing-preview-animation.gif"
              alt="Гифка которая показывает как в Compose всего за 15 строк реализовать свой аналог <details> с анимацией открывания и закрывания"/>
     </div>
 </article>
 <details>
     <summary>Спойлер</summary>
-    С помощью JavaScript я посчитал количество уникальных тегов. Количество пишется в консоль. Ещё помимо количества пишется что именно я посчитал.
+    С помощью JavaScript я посчитал количество уникальных тегов. Количество пишется в консоль. Ещё помимо количества
+    пишется что именно я посчитал.
 </details>
 <footer>
     <address class="card">
