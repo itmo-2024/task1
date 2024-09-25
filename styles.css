@@ -27,17 +27,21 @@ h4 {
   color: rgb(250, 63, 219);
 }
 
-article {
-  border: 2px;
-  border-color: rgb(250, 63, 219);
-}
-
 a:link {
   color: rgb(0, 255, 0);
 }
 
 a:visited {
   color: rgb(0, 255, 0);
+}
+
+dl {
+  color: rgb(250, 63, 219);
+  border: 2px;
+  border-color: cyan;
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
 }
 
 nav {
@@ -54,22 +58,33 @@ nav {
   margin-right: auto;
 }
 
+.margin {
+  margin-top: 100px;
+}
+
 .factsaboutMe {
+  display: inline-block;
+  max-width: fit-content;
+  max-height: fit-content;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10;
+}
+
+.inline-div {
+  display: inline-block;
+  max-width: fit-content;
+  max-height: fit-content;
+  text-align: center;
+  padding: 10;
   font-size: 150%;
 }
 
 .facts {
+  display: block;
   color: rgb(250, 63, 219);
   width: auto;
   max-height: fit-content;
-  font-size: 200%;
-}
-
-.facts li {
-  display: block;
+  font-size: 150%;
 }
 
 .horizontaly {
@@ -77,7 +92,6 @@ nav {
   max-height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
 }
 .horizontaly li {
   display: inline-block;
@@ -88,7 +102,7 @@ nav {
   max-height: fit-content;
   border: 5px solid rgb(0, 255, 0);
   padding: 10px;
-  background-color: rgb(152, 75, 16);
+  /* background-color: rgb(152, 75, 16); */
   text-align: center;
   color: cyan;
   font-size: 300%;
@@ -107,6 +121,7 @@ nav {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 10;
 }
 
 .maininfo {
@@ -124,4 +139,15 @@ nav {
   margin-right: auto;
   margin-bottom: 10px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.bobro {
+  background-color: cyan;
+  color: rgb(152, 75, 16);
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
