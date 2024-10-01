@@ -52,14 +52,17 @@ html {
 
 .icon1 {
     float: right;
-    height: 30px;
     margin-top: -4%;
+    width:10%;
+    height:170%;
 }
 
 .icon2,
 .icon3 {
     float: right;
     margin-top: -2%;
+    width:10%;
+    height:170%;
 }
 
 .div1 {
@@ -116,6 +119,8 @@ html {
     background: aliceblue;
     border-radius: 8px;
     border: 0;
+    width: 90%;
+    height: 10%;
 }
 
 .mainInformation {
@@ -129,6 +134,8 @@ html {
     margin-right: 2%;
     border-radius: 30px;
     min-width: 100px;
+    width: 30%;
+    height: 70%;
 }
 
 .info {
@@ -169,6 +176,8 @@ p {
 
 .img1 {
     border-radius: 30px;
+    width:90%;
+    height:40%;
 }
 
 .div5 {
@@ -180,7 +189,8 @@ p {
 .img2 {
     flex-grow: 1;
     border-radius: 30px;
-    height: fit-content;
+    width:40%;
+    height:40%;
 }
 
 .inst {
@@ -258,3 +268,17 @@ article {
     text-decoration: underline;
 }
 
+.icon_1 {
+    width: 20%;
+    height: 170%;
+}
+
+.icon_2 {
+    width:20%;
+    height:25%;
+}
+
+.img4{
+    width:90%;
+    height:70%;
+}
