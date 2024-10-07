@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#introduction">Предисловие</a>
+            <a href="#hobbies">Хобби</a>
+            <a href="#randomfacts">Факты</a>
+        </nav>
+
+        <div class="gerb">
+            <img src="sources/images/gerb.png" alt="Герб Хогвартса" />
+        </div>
+
+        <address class="contact-info">
+            <p>Почта: <a href="mailto:lixkarder@gmail.com">lixkarder@gmail.com</a> </p>
+            <p>Телеграмм: <a href="https://t.me/efimenkVic" target="_blank">@efimenkVic</a> </p>
+        </address>
+    </header>
+    <main>
+
+        <aside onclick="toggleExpand()">
+            <blockquote cite="https://www.livelib.ru/book/1000005878-garri-potter-i-uznik-azkabana-dzhoan-rouling">
+                «Торжественно клянусь, что совершаю шалость и только шалость!»
+            </blockquote>
+        </aside>
+
+        <section id="expandable" class="content">
+            <article  id="introduction">
+                <h3>Предисловие</h3>
+                <p> Добро пожаловать в мою миниавтобиографию! Я, <strong>Ефименко Виктор</strong>, на данный момент являюсь студентом 3-го курса 
+                    направления прикладной математики и информатики лучшего вуза страны - 
+                    <abbr title="Национальный исследовательский университет информационных технологий, механики и оптики">ИТМО</abbr>, 
+                    желаю принять участие в программе обмена Хогвартса. Далее расскажу немного о себе.
+                </p>
+            </article>
+
+            <article id="hobbies">
+                <h3>Хобби</h3>
+                <hr>
+                <h5>Музыка</h5>
+                <hr>
+                <p>
+                    Наверное, первое, что мне приходит в голову, это игра на музыкальных инструментах и музыка в целом. У меня есть классическая, акустическая, электроакустическая 
+                    и просто электрогитара, а также укулеле и синтезатор. Если честно, до синтезатора никак руки не дойдут, я почти не умею на нём играть.
+                    В школьную пору у нас с одноклассниками даже была своя <em>музыкальная группа</em>.
+                </p>
+                <a href="https://vk.com/arcadastarsarmusic">
+                    <figure>
+                        <img src="sources/images/group_picture.jpg" alt="Арт участников группы" width="100%">
+                        <figcaption>Наша группа</figcaption>
+                    </figure>
+                </a>
+                <p>Вот ещё решил наиграть мелодию из песни <u>Love Is Gone Vanotek</u> </p>
+                <figure>
+                    <audio controls src="sources/audio/audioclip.m4a"></audio>
+                </figure>
+
+                <hr>
+                <h5>Геймдев</h5>
+                <hr>
+
+                <p>
+                    В свободное время увлекаюсь разработкой игр, собираюсь поучавствовать в ITMO Gamedev Day в следующем году. 
+                    У меня есть парочка и 2д, и 3д проектов, но они настолько старые, что стыдно их показывать. Можно сказать после 2-ух годичного перерыва сел за новый проект,
+                    вот недорисованный домик героя, надеюсь закончу.
+                    <img src="sources/images/hill_house.png" alt="Рисунок домика из игры" width="100%">
+                </p>
+
+            </article>
+
+            <article id="randomfacts">
+                <h3>Рандомные факты обо мне</h3>
+                <ul>
+                    <li>Люблю танцевать</li>
+                    <li>Профессионально занимался фехтованием</li>
+                    <li>Играл The Beatles – Yesterday в оркестре</li>
+                    <li>Посетил 8 стран</li>
+                </ul>
+            </article>
+
+            <details>
+                <summary><small><i>Пасхалка</i></small></summary>
+                <pre>
+
+████████████████████████████████████████
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+█░░░░░░░██░█░░░░░░░░░░░░░░▐█▌░░░░░░░░░░█
+█░░░░░░░██▀█▐▀█░█░█▐▀█░░░██▀██░░░░░░░░░█
+█░░░░░░░██░█▐▀█░▀▄▀▐█▄░▄██▀▀▀██▄░░░░░░░█
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+█░░░░░░░░░░░░░░░░░██▀▀▀░░░░░░░░█░░░░░░░█
+█░░░░░░░░░░░░░░░░░██─▄▄▐▀█▐▀█▐▀█░░░░░░░█
+█░░░░░░░░░░░░░░░░░██▄██▐▄█▐▄█▐▄█░░░░░░░█
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+█░░░░░░░░▀██▀▄░░░░░░░░░░░░░░░░░░░░░░░░░█
+█░░░░░░░░░██░▐█▐▀█▐▄█░░░░░░░░░░░░░░░░░░█
+█░░░░░░░░▄██▄▀░▐▀█░▄█░░░░░░░░░░░░░░░░░░█
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+████████████████████████████████████████
+                   
+                </pre>
+            </details>
+            
+        </section>
+
+        <script type="text/javascript">
+            function toggleExpand() {
+                const content = document.getElementById('expandable');
+                content.classList.toggle('expanded');
+            }
+        </script>
+
+    </main>
+
+    <footer>
+        <p>Сайт создан <time datetime="2024-10-08">8 октября 2024 года</time></p>
+    </footer>
+</body>
+</html>
