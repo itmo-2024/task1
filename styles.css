@@ -1,0 +1,84 @@
+body {
+    scroll-behavior: smooth;
+    background-color: burlywood;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('sources/fonts/custom_font.ttf') format('truetype');
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.gerb {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.gerb img {
+    max-width: 15%;
+    height: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: large;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.content{
+    height: 0;
+    transition: height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.content.expanded {
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: beige;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+}
+
+blockquote {
+    font-size: x-large;
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    margin: 30px 0;
+    font-family: 'MyCustomFont', sans-serif;
+    cursor: pointer;
+}
+
+blockquote:hover {
+    background-color: rgba(255, 215, 0, 0.5)
+}
