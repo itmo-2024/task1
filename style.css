@@ -1,0 +1,181 @@
+#bg-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1; 
+}
+
+#bg-gif {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+body { 
+	font-family: Arial, sans-serif; 
+	line-height: 1.6; 
+	max-width: 800px; 
+	margin: auto; 
+	color: rgb(226, 16, 163);
+	position: relative;
+	z-index: 1;
+}
+
+.dark-mode {
+	color: rgb(10, 116, 198);
+}
+
+header, footer { 
+	background: rgba(3, 33, 110, 0.8); 
+	padding: 10px; 
+	text-align: center;
+	outline: 2px double rgb(142, 6, 6);
+	position: relative; 
+	z-index: 2;
+}
+
+h2 {
+	margin: 50px 0;
+	font-size: 4rem; 
+}
+
+h3 {
+	margin: 30px 0;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	background: black;
+	text-transform: uppercase;
+	animation: glitch 0.1s infinite alternate;
+}
+
+.theme-toggle { 
+	margin: 10px; 
+	padding: 10px; 
+	cursor: pointer; 
+	border: none; 
+	background: #333; 
+	color: rgb(124, 30, 219); 
+	border-radius: 5px;
+	position: relative;
+	z-index: 3;
+}
+
+.my-text-format {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	color: rgb(242, 237, 240);
+	font-size: large;
+}
+
+.bold-huge {
+	font-size: larger;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.neon, .neon2 {
+	font-size: larger;
+	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #00f, 0 0 40px #00f;
+}
+
+.neon {
+	color: #0ff;
+}
+
+.neon2 {
+	color: rgb(251, 250, 249);
+}
+
+@keyframes glitch {
+	0% { text-shadow: 2px 0 red, -2px 0 blue; }
+	50% { text-shadow: -2px 0 red, 2px 0 blue; }
+	100% { text-shadow: 2px 0 red, -2px 0 blue; }
+}
+
+.glitch {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	background: black;
+	text-transform: uppercase;
+	animation: glitch 0.1s infinite alternate;
+}
+
+@keyframes rainbow {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+.rainbow {
+	font-size: 2.5rem;
+	font-weight: bold;
+	background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+	background-size: 400% 400%;
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: white; 
+	animation: rainbow 5s infinite linear;
+}
+
+nav ul { 
+	list-style: none; 
+	padding: 0; 
+	text-align: center;
+	font-size: large;
+}
+
+nav ul li { 
+	display: inline-block;
+	margin-right: 10px; 
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	align-items: center; 
+	gap: 15px;
+	margin-bottom: 20px; 
+}
+
+.sized-video {
+	width: 120px; 
+	height: 120px;
+	object-fit: cover; 
+}
+
+section { 
+	margin-bottom: 20px; 
+}
+
+progress, meter {
+	 width: 100%; margin: 10px 0; 
+}
+
+.center-div { 
+	text-align: center;
+}
+
+.href-back { 
+	padding: 10px; 
+	text-align: center;
+	text-decoration: underline;
+	outline: 2px double rgb(142, 6, 6);
+	z-index: 1;
+}

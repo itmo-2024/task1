@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Письмо о себе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Фон -->
+    <video autoplay muted loop id="bg-video">
+        <source src="images/hello.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p class="my-text-format">
+            Привет! Меня зовут Саша, и я тактически начал закрывать фронтенд на допсе.
+            Спойлер: лучше так не делать хех.
+        </p>
+        <button class="theme-toggle" onclick="toggleTheme()">Смени тему!</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#achievements">То, что я люблю</a></li>
+            <li><a href="#stiflers-mom">МАМА СТИФЛЕРА</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>О себе</h2>
+            <article>
+                <p class="bold-huge">Если кратко, меня можно встретить в таких четырех состояниях:</p>
+                <div class="center-div">
+                    <img src="images/kapibara.png" width="190" height="190" alt="Капибара">
+                    <img src="images/axaxa.jpg" width="190" height="190" alt="Смешной я">
+                    <img src="images/i.png" width="190" height="190" alt="Мое фото">
+                    <img src="images/me.jpg" width="190" height="190" alt="ММоя ава">
+                </div>
+                <div class="center-div">
+                    <aside class="bold-huge underline">
+                        Забавный факт: я редко выпиваю.
+                        Нооо, когда я выпиваю, я превращаюсь в такое:
+                    </aside>
+                    <img src="images/sha-ek-get-back.gif">
+                </div>
+            </article>
+        </section>
+
+        <section id="achievements" class="neon">
+            <h2>То, что я люблю</h2>
+            <article>
+
+                <h3>Спорт</h3>
+                <p>
+                    Я считаю, что в нём я довольно неплох &#x1F60A;. 
+                    К примеру, я занимался хоккеем на профессиональном уровне на протяжении 15 лет, 
+                    вот часть моих наград &#x1F3C6; &#x1F3D2;:
+                </p>
+                <div class="center-div">
+                    <img src="images/jersi.jpg" width="250" height="300">
+                </div>
+                <p>Есть успехи и в этих видах спорта:</p>
+                <ul>
+                    <li>Футбол&#x26BD;
+                        <video autoplay muted loop class="sized-video">
+                            <source src="images/Nicolas_Jackson.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </li>
+                    <li>Волейбол&#x1F3D0; <img class="sized-video" src="images/derya-derya-cebecioğlu.gif"></li>
+                    <li>Настольный теннис&#x1F3D3; <img class="sized-video" src="images/extreme-ping-pong.gif"></li>
+                    <li>Горные/беговые лыжи&#x1F3BF; <img class="sized-video" src="images/giphy.gif"></li>
+                    <li>Баскетбол&#x1F3C0; <img class="sized-video" src="images/funny-as-hell-lmao.gif"></li>
+                    <li>Флорбол&#x1F3D1; <img class="sized-video" src="images/giphy (1).gif"></li>
+                </ul>
+
+                <h3>Путешествия</h3>
+                <p>
+                    За свою 21-летнюю жизнь мне довелось побывать во многих странах. 
+                    Я немного расскажу о самых интересных и необычных из них:
+                </p>
+                <h4 class="neon2">КУБА</h4>
+                <img src="images/cuba.jpg" width="900" height="600">
+                <p>
+                    Обалденная страна, совмещающая в себе вайбы Америки и СССР второй половины XX века.
+                    А еще там полно раритетных тачек &#x1F697;
+                </p>
+
+                <h4 class="neon2">АВСТРИЯ</h4>
+                <img src="images/ausstria.jpg" width="900" height="600">
+                <p>
+                    Очень красивая страна с горными деревушками и альпийским ландшафтом, кстати там меня научили кататься на горных лыжах &#x1F3D4;. 
+                    Мне было тогда где-то 9 лет и я ни черта не понимал на английском, а учитель не знал русский &#x1F602;.
+                </p>
+
+                <h4 class="neon2">ТУНИС</h4>
+                <img src="images/sahara.jpg" width="900" height="600">
+                <p>
+                    Знаете самую гигантскую пустыню "Сахара" &#x1F3DC;? Так вот, я там был, правда помню не очень хорошо. 
+                    Там я нашел красивого скорпиона и его чуть не прибили другие туристы, пока ловили, чтобы сфоткать &#x2620; 
+                </p>
+
+                <h3>Фильмы, Видеоигры, Музыка, короче всякое разное</h3>
+                <p>
+                    Любимый фильм естественно Звёздные войны - Эпизод 3: Месть ситхов, ну а сами Star Wars - любимая вселенная.
+                    Вот вам милашка Гривус❤❤❤❤❤:
+                </p>
+                <div class="center-div">
+                    <img src="images/grievous.gif" width="800" height="450">
+                </div>
+                <p>
+                    Любимая игра ну ЕСТЕСТВЕННО Fallout 4, кстати, купите скайрим пж а то Тодд Говард мне денежку не заплатит.
+                </p>
+                <div class="center-div">
+                    <img src="images/vaultboy.gif">
+                </div>
+                <p>
+                    Если вы задавались вопросом, что это за шакального качества гифка но фоне? Это фрагмент из клипа POP SMOK'a.
+                    Песня Hello в жанре Drill, такое я люблю хех. А вообще я люблю слушать западную популярную музыку.
+                </p>
+                <p>
+                    Люблю играть в разные настолки, к примеру Ticket To Ride, увлекаюсь коллекционированием,
+                     даже не знаю что еще написать, в общем люблю всего по немногу&#x1F60A;.
+                </p>
+            </article>
+        </section>
+        
+        <section id="stiflers-mom-section">
+          <hgroup>
+            <h2 class="rainbow">МАМА СТИФЛЕРА О ДААА</h2>
+            <h3>
+              Если вы когда нибудь задумывались о том,
+                как должна выгляить идеальная женщина. 
+            </h3>
+          </hgroup>
+            <p>
+                P.S: После наших мам, конечно же.
+            </p>
+            <p>
+                То, представляю вам МАМУ СТИФЛЕРА:
+            </p>
+            <figure>
+              <img src="images/converted_image.png" width="1028" height="727">
+              <figcaption>
+                <blockquote>
+                    Мальчик, ты заблудился? 
+                </blockquote>
+                <cite>— М. Стифлера</cite>
+              </figcaption>
+            </figure>
+            <div class="center-div">
+              <dl>
+                <dt><abbr title="Mother I'd Like to F*ck">MILF</abbr></dt>
+                <dd>Термин, который завирусился благодаря маме Стифлера - Mother I'd Like to F*ck.</dd>
+              </dl>            
+            </div>
+            <p>
+                для ознакомления в срочном порядке посмотреть первые 3 и последний фильм по данной ссылке
+            </p>
+            <div class="center-div href-back">
+                <a href="https://amerikanskiy-pirog-smotret-lordfilm.ru/" target="_blank">ЖМИ СЮДА ТЫ НЕ ПОЖАЛЕЕШЬ</a>
+            </div>
+        </section>
+
+        <section class="neon2">
+          <h2>Прогресс выполнения домашек по Фронту</h2>
+          <label for="task-progress">Прогресс:</label>
+          <progress id="task-progress" value="10" max="100">70%</progress>
+          <h2>Ожидаемая оценка: <var>4</var></h2>
+          <meter value="5" min="0" max="7">5 из 7</meter>
+          <p>Дата выполнения: <time datetime="2025-02-06">6 февраля 2025</time></p>
+        </section>
+        
+        <section id="contact">
+            <h2>Контакты</h2>
+            <details>
+              <summary>Просмотреть контакты</summary>
+              <address>
+                Email: <a href="mailto:dedGrigoriy.com">dedGrigoriy.com</a><br>
+                Телефон: 88005553535
+              </address>
+              <p><mark>Важно:</mark> <kbd>Лучше не пытаться связаться со мной!</kbd></p>
+          </details>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Белуган Александр. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            let body = document.body;
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                body.style.backgroundColor = "black";
+            } else {
+                body.style.backgroundColor = "white";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
